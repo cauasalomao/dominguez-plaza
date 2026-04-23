@@ -156,7 +156,7 @@ img.loaded { opacity:1; }
   position: absolute;
   inset: 0;
   background-image: url('../img/texture-red.jpg');
-  background-size: 420px auto;
+  background-size: 720px auto;
   background-repeat: repeat;
   opacity: .45;
   pointer-events: none;
@@ -195,7 +195,7 @@ img.loaded { opacity:1; }
   position: absolute;
   inset: 0;
   background-image: url('../img/texture-red.jpg');
-  background-size: 420px auto;
+  background-size: 720px auto;
   background-repeat: repeat;
   opacity: .4;
   pointer-events: none;
@@ -217,7 +217,7 @@ img.loaded { opacity:1; }
   position: absolute;
   inset: 0;
   background-image: url('../img/texture-red.jpg');
-  background-size: 420px auto;
+  background-size: 720px auto;
   background-repeat: repeat;
   opacity: .45;
   pointer-events: none;
