@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Hotel Dominguez Plaza">
+  <g stroke="#D4A056" stroke-width="1.2" fill="none" stroke-linecap="round">
+    <path d="M 210 20 Q 168 22 168 42 Q 168 56 186 60"/>
+    <path d="M 210 20 Q 252 22 252 42 Q 252 56 234 60"/>
+  </g>
+  <circle cx="210" cy="20" r="2.8" fill="#D4A056"/>
+  <text x="210" y="88" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', Times, serif"
+        font-style="italic" font-size="58" fill="#7C2A26"
+        font-weight="400">Dominguez</text>
+  <text x="210" y="120" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', Times, serif"
+        font-size="13" fill="#B8873F"
+        font-weight="500" letter-spacing="8">PLAZA HOTEL</text>
+</svg>

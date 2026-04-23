@@ -1,0 +1,27 @@
+# Configs/projetos locais
+.claude/
+pousada-montverde-final/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Mídia não publicada (vídeos brutos — ~4.8GB)
+Videos/
+
+# Acervo completo de fotos (4.5GB). Apenas as fotos usadas no site
+# entram no repo via `git add -f` explícito.
+Fotos/
+
+# Documentos internos do cliente (não-públicos)
+# Briefing do Cliente — Hotel Dominguez Plaza.md
+# Briefing do Sistema — Hotel Dominguez Plaza.md
+*Briefing*.md
+
+# Guia de identidade visual (fonte, não asset do site)
+Base*.png
+Base*.jpg

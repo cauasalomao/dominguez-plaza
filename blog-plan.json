@@ -1,0 +1,116 @@
+{
+  "_note": "Plano editorial do blog do Hotel Dominguez Plaza. Pilares: Nova Friburgo (destino), Escapadas (casais e famílias), Tradição (legado histórico), Eventos (casamentos e corporativos).",
+
+  "editorial_strategy": {
+    "goal": "Atrair tráfego orgânico qualificado de casais e famílias do Rio de Janeiro, Niterói, Região dos Lagos e Região Serrana interessados em escapadas para Nova Friburgo, convertendo em reservas diretas.",
+    "target_audience": "Casais em viagem romântica, famílias com crianças, turistas de fim de semana e noivos planejando casamentos em Nova Friburgo.",
+    "tone": "Elegante, acolhedor e tradicional. Linguagem refinada que valoriza o legado histórico e a hospitalidade de 55 anos."
+  },
+
+  "pillars": [
+    {
+      "name": "Nova Friburgo",
+      "description": "Roteiros, atrações, centro histórico, gastronomia e cultura da Suíça Brasileira",
+      "icon": "buildings"
+    },
+    {
+      "name": "Escapadas",
+      "description": "Fins de semana românticos, viagens em família, escapadas do Rio de Janeiro",
+      "icon": "heart"
+    },
+    {
+      "name": "Tradição",
+      "description": "História do prédio de 110 anos, família Dominguez, hospitalidade através de três gerações",
+      "icon": "clock-countdown"
+    },
+    {
+      "name": "Eventos",
+      "description": "Casamentos, comemorações, eventos corporativos em ambiente histórico",
+      "icon": "heart-straight"
+    }
+  ],
+
+  "seo": {
+    "region_keywords": [
+      "Nova Friburgo",
+      "Nova Friburgo RJ",
+      "Suíça Brasileira",
+      "Região Serrana",
+      "Praça do Suspiro",
+      "hotel em Nova Friburgo",
+      "hospedagem Nova Friburgo",
+      "escapada do Rio",
+      "viagem romântica RJ"
+    ],
+    "intent_keywords": [
+      "o que fazer em Nova Friburgo",
+      "passeios em Nova Friburgo",
+      "Nova Friburgo fim de semana",
+      "Nova Friburgo com filhos",
+      "casamento em Nova Friburgo",
+      "Nova Friburgo com cachoeira",
+      "Nova Friburgo inverno",
+      "restaurantes Nova Friburgo"
+    ]
+  },
+
+  "post_template_spec": {
+    "title_format": "{Título} | Blog Hotel Dominguez Plaza",
+    "word_count": "800-1200",
+    "required": [
+      "intro com palavra-chave nos primeiros 100 palavras",
+      "3 a 5 subtítulos H2",
+      "pelo menos 2 links internos (acomodacoes, eventos, contato, galeria)",
+      "blog-cta-box no final convidando para reserva",
+      "schema BlogPosting + BreadcrumbList",
+      "meta description ≤155 caracteres"
+    ]
+  },
+
+  "published": [],
+
+  "upcoming": [
+    {
+      "slug": "o-que-fazer-em-nova-friburgo-fim-de-semana",
+      "pillar": "Nova Friburgo",
+      "title": "O Que Fazer em Nova Friburgo no Fim de Semana: Roteiro Completo"
+    },
+    {
+      "slug": "historia-dominguez-plaza-110-anos",
+      "pillar": "Tradição",
+      "title": "110 Anos de Prédio, 55 de Família: A História do Dominguez Plaza"
+    },
+    {
+      "slug": "escapada-romantica-nova-friburgo",
+      "pillar": "Escapadas",
+      "title": "Escapada Romântica em Nova Friburgo: Guia para Casais"
+    },
+    {
+      "slug": "casamento-em-hotel-historico-nova-friburgo",
+      "pillar": "Eventos",
+      "title": "Casamento em Hotel Histórico: Como Planejar no Dominguez Plaza"
+    },
+    {
+      "slug": "nova-friburgo-com-criancas",
+      "pillar": "Escapadas",
+      "title": "Nova Friburgo com Crianças: Programas Para Toda a Família"
+    },
+    {
+      "slug": "cafe-da-manha-da-horta-dominguez",
+      "pillar": "Tradição",
+      "title": "Da Horta à Mesa: O Café da Manhã do Dominguez Plaza"
+    },
+    {
+      "slug": "trilhas-e-cachoeiras-perto-de-nova-friburgo",
+      "pillar": "Nova Friburgo",
+      "title": "Trilhas e Cachoeiras Perto de Nova Friburgo: 7 Destinos Imperdíveis"
+    },
+    {
+      "slug": "inverno-em-nova-friburgo",
+      "pillar": "Nova Friburgo",
+      "title": "Inverno em Nova Friburgo: A Suíça Brasileira na Melhor Estação"
+    }
+  ],
+
+  "cta_default": "Reserve sua estadia no Hotel Dominguez Plaza"
+}

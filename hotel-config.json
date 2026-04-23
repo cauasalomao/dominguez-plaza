@@ -1,0 +1,304 @@
+{
+  "_note": "Fonte de verdade para o site do Hotel Dominguez Plaza. Manter sincronizado com as constantes em assets/js/main.js.",
+
+  "hotel": {
+    "name": "Hotel Dominguez Plaza",
+    "tagline": "55 anos de tradição no coração de Nova Friburgo",
+    "description_short": "Hotel histórico na Praça do Suspiro, Nova Friburgo/RJ. Mais de 110 anos de prédio, 55 anos de gestão familiar, café da manhã com produtos da própria horta e varandas com vista para as montanhas da Suíça Brasileira.",
+    "description_long": "O Hotel Dominguez Plaza nasceu há mais de 50 anos da visão do Sr. Julio Dominguez e Dona Glória, e hoje é conduzido pela filha Marisa Dominguez com a mesma dedicação que recebeu mais de 800 mil hóspedes ao longo de três gerações. Instalado em um prédio com mais de 110 anos na Praça do Suspiro — centro histórico de Nova Friburgo — o hotel reúne requinte, bom gosto e elegância nos mínimos detalhes. A maioria dos apartamentos e suítes tem varandas privativas com vista para as montanhas da Suíça Brasileira, estacionamento privativo próprio, acessibilidade para necessidades especiais e um café da manhã preparado com itens frescos, frutas e produtos da nossa própria horta. Permita-nos fazer de sua viagem a Nova Friburgo uma experiência extremamente agradável e bem sucedida.",
+    "style": "Hotel histórico urbano, elegante, tradicional, acolhedor — Nova Friburgo/Suíça Brasileira",
+    "target_audience": "Casais em viagem romântica buscando charme e vista das montanhas; famílias com crianças; turistas de fim de semana em escapadas curtas do Rio, Niterói, Região dos Lagos e Região Serrana.",
+    "tone": "Elegante e acolhedor, tradicional sem ser formal. Legado familiar de 55 anos como ativo de marca — modernização sem perder a tradição."
+  },
+
+  "contact": {
+    "phone": "(22) 2523-9787",
+    "phone_international": "+55-22-2523-9787",
+    "whatsapp_display": "(22) 99293-8225",
+    "phone_alt": "(22) 99844-5510",
+    "email": "reservas@hoteldominguez.com.br",
+    "wa_number": "5522992938225",
+    "instagram": "hoteldominguezplaza",
+    "instagram_url": "https://instagram.com/hoteldominguezplaza"
+  },
+
+  "address": {
+    "street": "Praça do Suspiro, 114",
+    "neighborhood": "Centro",
+    "city": "Nova Friburgo",
+    "state": "RJ",
+    "zip": "28625-490",
+    "country": "BR",
+    "coordinates": {
+      "lat": -22.2819,
+      "lng": -42.5311
+    }
+  },
+
+  "business": {
+    "cnpj": "00.000.000/0001-00",
+    "number_of_units": 4,
+    "checkin_time": "14:00",
+    "checkout_time": "12:00",
+    "price_range": "$$$",
+    "average_daily_rate": "R$ 482,00",
+    "direct_booking_rate": "90%",
+    "years_history_building": 110,
+    "years_history_hotel": 55,
+    "guests_served": "800 mil",
+    "occupancy_goal": "100%",
+    "voltage": "220V"
+  },
+
+  "history": {
+    "building_years": "110+",
+    "hotel_years": "55",
+    "founders": "Sr. Julio Dominguez e Dona Glória",
+    "current_management": "Marisa Dominguez",
+    "founding_story": "Sr. Julio Dominguez chegou ao Brasil aos 15 anos em busca de oportunidades. Trabalhou no Hotel São Paulo de familiares distantes e depois como garçom no Rio de Janeiro. Dona Glória chegou ao Brasil em 1950, aos 11 anos. O casal se conheceu por volta de 1957 e se casou em 16 de dezembro de 1961, na Catedral São João Batista. Iniciaram com o Bar Tingly, onde também residiam, e com trabalho constante consolidaram o legado de hospitalidade que hoje representa o Hotel Dominguez Plaza.",
+    "building_story": "A história do Dominguez Plaza se confunde com a própria história de Nova Friburgo. Depois de ter sido sede de fazenda, mansão de veraneio, residência de família tradicional e até escola, o prédio se transformou em hotel com o nome Schumacher. Ao longo de 110 anos passou por diversas obras de expansão e melhorias, sempre preservando a arquitetura original e o estilo.",
+    "management_story": "Marisa Dominguez cresceu dentro da operação hoteleira. Ingressou no hotel aos sete anos, quando sua família assumiu a administração do empreendimento. Participou da rotina desde cedo — recepção, atendimento ao cliente, apoio operacional e rotinas administrativas. Cursou Administração em Nova Friburgo e assumiu a gestão ao lado do pai. Atualmente lidera o hotel com apoio de uma equipe experiente e treinada, preparando a casa para os 55 anos de história."
+  },
+
+  "accommodations": [
+    {
+      "category": "especial",
+      "name": "Apartamento Especial",
+      "label": "Nossa categoria superior",
+      "capacity": "Casais e famílias",
+      "highlights": [
+        "Ar-condicionado frio e quente",
+        "Varanda privativa com vista para as montanhas",
+        "Wi-Fi",
+        "Frigobar",
+        "TV",
+        "Banheiro privativo"
+      ],
+      "image": "/Fotos/suites/suites_0003.JPG"
+    },
+    {
+      "category": "chale",
+      "name": "Apartamento no Chalé",
+      "label": "Charme rústico em Nova Friburgo",
+      "capacity": "Casais e pequenas famílias",
+      "highlights": [
+        "Ambiente aconchegante em estilo chalé",
+        "Varanda privativa",
+        "Wi-Fi",
+        "Frigobar",
+        "TV"
+      ],
+      "image": "/Fotos/suites/suites_0005.JPG"
+    },
+    {
+      "category": "colonial-5",
+      "name": "Apartamento Colonial 5º Andar",
+      "label": "Vista privilegiada das montanhas",
+      "capacity": "Casais e famílias",
+      "highlights": [
+        "Localizado no 5º andar com vista ampla",
+        "Estilo colonial clássico",
+        "Wi-Fi",
+        "Frigobar",
+        "TV",
+        "Banheiro privativo"
+      ],
+      "image": "/Fotos/suites/suites_0008.JPG"
+    },
+    {
+      "category": "colonial",
+      "name": "Apartamento Colonial",
+      "label": "Tradição com conforto essencial",
+      "capacity": "Casais e famílias",
+      "highlights": [
+        "Estrutura clássica preservada",
+        "Estilo colonial tradicional",
+        "Ventilador (algumas unidades sem ar-condicionado)",
+        "Wi-Fi",
+        "Frigobar",
+        "TV",
+        "Banheiro privativo"
+      ],
+      "image": "/Fotos/suites/suites_0012.jpg"
+    }
+  ],
+
+  "suite_features": {
+    "note": "Suítes do hotel possuem hidromassagem e ar-condicionado frio/quente.",
+    "amenities": ["Hidromassagem", "Ar-condicionado frio e quente", "Varanda privativa"]
+  },
+
+  "amenities_all_units": [
+    "Wi-Fi em todo o hotel",
+    "Frigobar",
+    "TV",
+    "Banheiro privativo",
+    "Estacionamento privativo próprio",
+    "Apartamentos adaptados para necessidades especiais"
+  ],
+
+  "differentials": [
+    "Mais de 110 anos de história em prédio preservado no centro histórico",
+    "55 anos de gestão familiar — três gerações de hóspedes",
+    "Café da manhã com itens frescos e produtos da nossa horta",
+    "Localização estratégica na Praça do Suspiro, coração de Nova Friburgo",
+    "Estacionamento privativo próprio",
+    "Apartamentos adaptados para necessidades especiais",
+    "Varandas privativas com vista para as montanhas",
+    "Flexibilidade comercial e negociações diferenciadas",
+    "Mais de 800 mil clientes atendidos"
+  ],
+
+  "experience": {
+    "breakfast": {
+      "title": "Café da manhã da casa",
+      "description": "Mesa farta com itens frescos todos os dias, frutas da estação, pães, bolos caseiros, frios e produtos da nossa própria horta. Um ritual tradicional que celebra o bem receber da família Dominguez."
+    },
+    "pool": {
+      "title": "Piscina e área externa",
+      "description": "Área de piscina rodeada pelas montanhas de Nova Friburgo. Espaço ideal para relaxar após um dia de passeios, e palco perfeito para festas tropicais e eventos sociais com música ao vivo."
+    },
+    "location": {
+      "title": "Centro histórico ao alcance dos pés",
+      "description": "Da Praça do Suspiro, você caminha até os principais pontos turísticos, comerciais e gastronômicos de Nova Friburgo — com a segurança de deixar o carro em nosso estacionamento privativo."
+    }
+  },
+
+  "events": {
+    "spaces_count": 4,
+    "capacity_min": 30,
+    "capacity_max": 200,
+    "description": "4 espaços para eventos funcionais e intercambiáveis, com opção de locação de equipamentos de informática, áudio e vídeo de última geração. Ambiente moderno e elegante para conferências, convenções, festas, seminários, casamentos, reuniões de trabalho e comemorações.",
+    "types": [
+      "Conferências e convenções",
+      "Casamentos e comemorações",
+      "Seminários e palestras",
+      "Reuniões de trabalho",
+      "Festas e eventos sociais",
+      "Festas tropicais na área da piscina com música ao vivo"
+    ],
+    "services": [
+      "Making Off",
+      "Arrumação especial no apartamento",
+      "Equipamentos de áudio e vídeo",
+      "Decoração personalizada",
+      "Cardápio personalizado"
+    ],
+    "contact": "+55 22 2523-9787 / WhatsApp +55 22 99293-8225"
+  },
+
+  "packages": [
+    {
+      "name": "Pacote Noite Romântica",
+      "description": "Uma escapada a dois no charme histórico de Nova Friburgo",
+      "duration": "2 diárias",
+      "pricing": "Consulte"
+    }
+  ],
+
+  "nearby_attractions": [
+    {
+      "name": "Centro Histórico de Nova Friburgo",
+      "distance": "Ao lado (Praça do Suspiro)",
+      "note": "Igrejas históricas, praças, arquitetura preservada"
+    },
+    {
+      "name": "Bondinho de Nova Friburgo",
+      "distance": "~2km",
+      "note": "Vista panorâmica do Morro da Cruz"
+    },
+    {
+      "name": "Pico da Caledônia",
+      "distance": "~15km",
+      "note": "2.310m, um dos pontos mais altos do estado"
+    },
+    {
+      "name": "Parque Estadual dos Três Picos",
+      "distance": "~25km",
+      "note": "Trilhas, cachoeiras e mirantes"
+    },
+    {
+      "name": "Lumiar e São Pedro da Serra",
+      "distance": "~35km",
+      "note": "Rios, cachoeiras e gastronomia rural"
+    },
+    {
+      "name": "Pedra do Cão Sentado",
+      "distance": "~12km",
+      "note": "Formação rochosa icônica da região"
+    },
+    {
+      "name": "Cascata do Pinel",
+      "distance": "~18km",
+      "note": "Queda d'água em mata preservada"
+    },
+    {
+      "name": "Mury e Stucky",
+      "distance": "~8km",
+      "note": "Distritos charmosos com chalés e restaurantes alemães"
+    }
+  ],
+
+  "regions_origin": [
+    "Rio de Janeiro",
+    "Niterói",
+    "Região dos Lagos",
+    "Região Serrana"
+  ],
+
+  "marketing": {
+    "active_promotions": [],
+    "channel_manager": "Omnibees",
+    "booking_engine": "Desbravador"
+  },
+
+  "policies": {
+    "children": "Consulte políticas de idade no momento da reserva",
+    "payment": "Principais cartões de crédito",
+    "accessibility": "Apartamentos adaptados disponíveis para hóspedes com necessidades especiais"
+  },
+
+  "integrations": {
+    "webhook_url": "https://webhook.example.com/webhook/REPLACE-ME",
+    "gtm_id": "",
+    "booking_engine_url": "https://reservas.desbravador.com.br/hotel-app/hotel-dominguez-plaza/reservation",
+    "booking_engine_provider": "Desbravador",
+    "maps_embed_query": "Hotel Dominguez Plaza, Nova Friburgo - RJ",
+    "domain": "https://www.hoteldominguez.com.br"
+  },
+
+  "design": {
+    "primary": "#7C2A26",
+    "primary_dark": "#5C1E1C",
+    "accent_red": "#9E3B30",
+    "warm": "#BC5F3C",
+    "cta": "#D4A056",
+    "cta_secondary": "#B8873F",
+    "bg": "#ffffff",
+    "surface": "#faf6f1",
+    "text": "#2a1617",
+    "font_display": "Cinzel",
+    "font_body": "DM Sans",
+    "font_script": "Great Vibes"
+  },
+
+  "blog": {
+    "enabled": true,
+    "topics_focus": [
+      "Tradição e história de Nova Friburgo",
+      "Escapadas românticas na Suíça Brasileira",
+      "Roteiros de fim de semana saindo do Rio",
+      "Centro histórico e arquitetura",
+      "Gastronomia e cafés em Nova Friburgo",
+      "Trilhas e mirantes da região serrana",
+      "Eventos e casamentos em hotel histórico",
+      "Legado familiar e hospitalidade"
+    ],
+    "seo_region_keywords": [
+      "Nova Friburgo", "Suíça Brasileira", "Praça do Suspiro",
+      "Região Serrana RJ", "hotel em Nova Friburgo", "escapada do Rio"
+    ],
+    "internal_link_targets": ["acomodacoes", "experiencia", "eventos", "contato", "galeria"],
+    "cta_default": "Reserve sua estadia no Hotel Dominguez Plaza"
+  }
+}

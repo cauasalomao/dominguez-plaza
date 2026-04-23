@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<title>Galeria de Fotos — Hotel Dominguez Plaza | Nova Friburgo, RJ</title>
+<meta name="description" content="Explore o Hotel Dominguez Plaza em imagens: fachada histórica, suítes, café da manhã da horta, piscina, áreas comuns e eventos em Nova Friburgo.">
+<meta property="og:title" content="Galeria — Hotel Dominguez Plaza">
+<meta property="og:description" content="Fachada histórica, suítes, café da manhã, piscina, áreas comuns e eventos.">
+<meta property="og:image" content="https://www.hoteldominguez.com.br/Fotos/areas-externas/areas-externas_0001.jpg">
+<meta property="og:url" content="https://www.hoteldominguez.com.br/galeria/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://www.hoteldominguez.com.br/galeria/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.hoteldominguez.com.br/Fotos/areas-externas/areas-externas_0001.jpg">
+
+<!-- GTM HEAD -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Galeria - Hotel Dominguez Plaza",
+  "url": "https://www.hoteldominguez.com.br/galeria/",
+  "isPartOf": {"@type":"WebSite","url":"https://www.hoteldominguez.com.br/","name":"Hotel Dominguez Plaza"},
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteldominguez.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Galeria","item":"https://www.hoteldominguez.com.br/galeria/"}
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="hdr solid" id="hdr">
+  <div class="hdr-inner">
+    <a href="../index.html" class="logo"><img src="../assets/img/logo-placeholder.svg" alt="Hotel Dominguez Plaza" class="logo-img"></a>
+    <nav class="nav">
+      <a href="../sobre/">Sobre</a>
+      <a href="../acomodacoes/">Acomodações</a>
+      <a href="../experiencia/">Experiência</a>
+      <a href="../eventos/">Eventos</a>
+      <a href="../galeria/">Galeria</a>
+      <a href="../localizacao/">Localização</a>
+      <a href="../contato/">Contato</a>
+    </nav>
+    <a href="#" onclick="openBooking();return false" class="hdr-btn">Reservar</a>
+    <button class="ham" id="ham" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobnav" id="mobnav">
+  <a href="../sobre/" onclick="closeMob()">Sobre</a>
+  <a href="../acomodacoes/" onclick="closeMob()">Acomodações</a>
+  <a href="../experiencia/" onclick="closeMob()">Experiência</a>
+  <a href="../eventos/" onclick="closeMob()">Eventos</a>
+  <a href="../galeria/" onclick="closeMob()">Galeria</a>
+  <a href="../localizacao/" onclick="closeMob()">Localização</a>
+  <a href="../contato/" onclick="closeMob()">Contato</a>
+  <a href="#" class="btn-gold" style="margin-top:1rem" onclick="closeMob();openBooking();return false">Reservar Agora</a>
+</div>
+
+<section class="pg-hero">
+  <img src="/Fotos/areas-externas/areas-externas_0001.jpg" alt="Hotel Dominguez Plaza visto de fora">
+  <div class="pg-hero-c">
+    <span class="overline">Galeria</span>
+    <h1>Nosso hotel <span class="script script-accent">em imagens</span></h1>
+  </div>
+</section>
+
+<section style="background:var(--bg);padding-top:var(--space-lg)">
+  <div class="container">
+    <div class="sec-head c">
+      <p class="overline">Conheça o Dominguez Plaza</p>
+      <h2>Cada detalhe conta <span class="script script-accent">uma história</span></h2>
+      <div class="divider cx"></div>
+    </div>
+    <div class="gal-g" id="galGrid"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-hero">
+  <img src="/Fotos/areas-externas/areas-externas_0025.jpg" alt="Vista do Hotel Dominguez Plaza" class="cta-hero-bg">
+  <div class="cta-hero-ov"></div>
+  <div class="container" style="position:relative;z-index:2;text-align:center">
+    <p class="overline" style="color:rgba(255,255,255,.7);display:block;margin:0 auto">Venha viver essa experiência</p>
+    <h2 style="color:#fff;margin:.6rem auto 1rem">Reserve sua estadia <span class="script script-accent">agora</span></h2>
+    <div class="divider cx" style="background:var(--cta)"></div>
+    <p style="color:rgba(255,255,255,.82);margin:1.2rem auto 2.5rem">Cada foto é um convite para descobrir o Dominguez Plaza pessoalmente.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="#" onclick="openBooking();return false" class="btn-gold">Fazer Reserva</a>
+      <a class="btn-outline-w" href="https://wa.me/5522992938225" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <span class="logo" style="color:rgba(255,255,255,.95)">Dominguez Plaza</span>
+        <p>Hotel histórico na Praça do Suspiro, Nova Friburgo. 55 anos de tradição familiar e mais de 110 anos de prédio preservado no coração da Suíça Brasileira.</p>
+        <div class="ft-social">
+          <a href="https://instagram.com/hoteldominguezplaza" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://wa.me/5522992938225" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Navegação</h4>
+        <a href="../sobre/">Sobre</a>
+        <a href="../acomodacoes/">Acomodações</a>
+        <a href="../experiencia/">Experiência</a>
+        <a href="../eventos/">Eventos</a>
+        <a href="../galeria/">Galeria</a>
+        <a href="../localizacao/">Localização</a>
+        <a href="../contato/">Contato</a>
+      </div>
+      <div class="ft-col">
+        <h4>Contato</h4>
+        <span><i class="ph-thin ph-phone"></i> (22) 2523-9787</span>
+        <span><i class="ph-thin ph-whatsapp-logo"></i> (22) 99293-8225</span>
+        <span><i class="ph-thin ph-envelope-simple"></i> reservas@hoteldominguez.com.br</span>
+        <span><i class="ph-thin ph-map-pin"></i> Praça do Suspiro, 114 — Centro</span>
+        <span>Nova Friburgo – RJ</span>
+        <span>CEP 28625-490</span>
+      </div>
+      <div class="ft-col">
+        <h4>Perto de Você</h4>
+        <span><i class="ph-thin ph-buildings"></i> Centro Histórico</span>
+        <span><i class="ph-thin ph-mountains"></i> Pico da Caledônia</span>
+        <span><i class="ph-thin ph-tram"></i> Bondinho</span>
+        <span><i class="ph-thin ph-tree"></i> Três Picos</span>
+        <span><i class="ph-thin ph-rocks"></i> Pedra do Cão Sentado</span>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>© 2026 Hotel Dominguez Plaza · Todos os direitos reservados</p>
+      <p>Reservas pelo motor <a href="https://reservas.desbravador.com.br/hotel-app/hotel-dominguez-plaza/reservation" target="_blank" rel="noopener">Desbravador</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lb">
+  <button class="lb-close" onclick="closeLB()" aria-label="Fechar">×</button>
+  <button class="lb-nav lb-prev" onclick="navLB(-1)" aria-label="Anterior">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav lb-next" onclick="navLB(1)" aria-label="Próxima">›</button>
+  <div id="lbCnt"></div>
+</div>
+
+<a class="wa-btn" href="https://wa.me/5522992938225" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<div class="ck" id="cookieBanner">
+  <div class="ck-in">
+    <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a> e o uso de cookies.</p>
+    <div style="display:flex;gap:.6rem;flex-shrink:0">
+      <button class="btn-green" style="font-size:.72rem;padding:.5rem 1.2rem" onclick="acceptCookies()">Aceitar</button>
+      <button class="btn-outline" style="font-size:.72rem;padding:.5rem 1.2rem" onclick="declineCookies()">Recusar</button>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+
+<script>
+// Galeria curada do Hotel Dominguez Plaza
+const GALLERY = [
+  ['/Fotos/areas-externas/areas-externas_0001.jpg', 'Fachada do Hotel Dominguez Plaza'],
+  ['/Fotos/areas-externas/areas-externas_0005.JPG', 'Entrada principal do hotel'],
+  ['/Fotos/areas-externas/areas-externas_0010.JPG', 'Vista da fachada histórica'],
+  ['/Fotos/areas-comuns/areas-comuns_0001.JPG', 'Hall de entrada'],
+  ['/Fotos/areas-comuns/areas-comuns_0005.JPG', 'Área comum decorada'],
+  ['/Fotos/areas-comuns/areas-comuns_0010.JPG', 'Ambiente social do hotel'],
+  ['/Fotos/suites/suites_0001.JPG', 'Suíte do Hotel Dominguez Plaza'],
+  ['/Fotos/suites/suites_0003.JPG', 'Apartamento Especial'],
+  ['/Fotos/suites/suites_0005.JPG', 'Apartamento no Chalé'],
+  ['/Fotos/suites/suites_0008.JPG', 'Apartamento Colonial 5º Andar'],
+  ['/Fotos/suites/suites_0012.jpg', 'Apartamento Colonial'],
+  ['/Fotos/suites/suites_0015.jpg', 'Detalhes do quarto'],
+  ['/Fotos/banheiros/banheiros_0001.JPG', 'Banheiro privativo'],
+  ['/Fotos/banheiros/banheiros_0005.JPG', 'Banheiro com hidromassagem'],
+  ['/Fotos/cafe-da-manha/cafe-da-manha_0001.jpg', 'Café da manhã com produtos da horta'],
+  ['/Fotos/cafe-da-manha/cafe-da-manha_0005.jpg', 'Detalhe da mesa farta'],
+  ['/Fotos/cafe-da-manha/cafe-da-manha_0010.jpg', 'Frutas frescas servidas diariamente'],
+  ['/Fotos/cafe-da-manha/cafe-da-manha_0020.jpg', 'Pães e bolos caseiros'],
+  ['/Fotos/piscina/piscina_0001.jpg', 'Piscina do Hotel Dominguez Plaza'],
+  ['/Fotos/piscina/piscina_0005.JPG', 'Área da piscina'],
+  ['/Fotos/piscina/piscina_0010.jpg', 'Deck da piscina'],
+  ['/Fotos/piscina/piscina_0020.jpg', 'Piscina ao entardecer'],
+  ['/Fotos/eventos/eventos_0001.jpg', 'Salão de eventos preparado'],
+  ['/Fotos/eventos/eventos_0010.jpg', 'Casamento no Dominguez Plaza'],
+  ['/Fotos/eventos/eventos_0030.jpg', 'Conferência no hotel'],
+  ['/Fotos/eventos/eventos_0050.jpg', 'Festa de celebração'],
+  ['/Fotos/detalhes/detalhes_0001.jpg', 'Detalhes da arquitetura histórica'],
+  ['/Fotos/detalhes/detalhes_0005.jpg', 'Decoração clássica preservada'],
+  ['/Fotos/detalhes/detalhes_0010.jpg', 'Detalhe arquitetônico'],
+  ['/Fotos/equipe/equipe_0001.jpg', 'Equipe do Hotel Dominguez Plaza']
+];
+
+const grid = document.getElementById('galGrid');
+GALLERY.forEach((item, i) => {
+  const [src, alt] = item;
+  LB_SRCS.push(src);
+  const gi = document.createElement('div');
+  gi.className = 'gi';
+  gi.setAttribute('onclick', `openLB(${i})`);
+  gi.innerHTML = `<img src="${src}" alt="${alt}" loading="lazy">`;
+  grid.appendChild(gi);
+});
+</script>
+
+</body>
+</html>
