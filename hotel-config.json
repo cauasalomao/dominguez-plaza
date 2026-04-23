@@ -74,7 +74,7 @@
         "TV",
         "Banheiro privativo"
       ],
-      "image": "/Fotos/suites/suites_0003.JPG"
+      "image": "Fotos/suites/suites_0003.JPG"
     },
     {
       "category": "chale",
@@ -88,7 +88,7 @@
         "Frigobar",
         "TV"
       ],
-      "image": "/Fotos/suites/suites_0005.JPG"
+      "image": "Fotos/suites/suites_0005.JPG"
     },
     {
       "category": "colonial-5",
@@ -103,7 +103,7 @@
         "TV",
         "Banheiro privativo"
       ],
-      "image": "/Fotos/suites/suites_0008.JPG"
+      "image": "Fotos/suites/suites_0008.JPG"
     },
     {
       "category": "colonial",
@@ -119,7 +119,7 @@
         "TV",
         "Banheiro privativo"
       ],
-      "image": "/Fotos/suites/suites_0012.jpg"
+      "image": "Fotos/suites/suites_0012.jpg"
     }
   ],
 

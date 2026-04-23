@@ -283,7 +283,7 @@ Nada disso está feito ainda. Sugestão de sequência:
 - Modais usam o toggle da classe `.open`. `document.body.style.overflow = 'hidden'` enquanto aberto, restaurado no fechamento.
 - Forms `preventDefault` → webhook → evento GTM → ação de UI (redirect / WhatsApp / estado de sucesso).
 - `<style>` inline em subpáginas (sobre, experiencia) guardam regras específicas da página; o global fica em `assets/css/style.css`.
-- O path do logo no markup injetado por JS usa `/assets/img/logo-placeholder.svg` absoluto para resolver corretamente a partir de qualquer profundidade — ao trocar pelo logo do Dominguez manter o nome ou atualizar a constante no JS.
+- Paths no site são **relativos** (ex.: `Fotos/...` no root, `../Fotos/...` em subpáginas). Isso é necessário para o deploy em GitHub Pages funcionar em subpath (`cauasalomao.github.io/dominguez-plaza/`). O logo injetado pelo `main.js` no modal de reservas é derivado dinamicamente via `document.currentScript.src` → `LOGO_URL`, cobrindo qualquer profundidade automaticamente.
 - Não edite a CSS legada `.wa-modal` — é herança do template base sem uso; o modal de WhatsApp vivo usa classes `.wl-*`.
 
 ## Preferência do usuário — política de Git

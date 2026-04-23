@@ -10,6 +10,10 @@ const WA_MESSAGE  = 'Olá! Gostaria de informações sobre o Hotel Dominguez Pla
 const BOOKING_URL = 'https://www.hoteldominguez.com.br/';
 const MOTOR_BASE  = 'https://reservas.desbravador.com.br/hotel-app/hotel-dominguez-plaza/reservation';
 
+// Resolve URL do logo a partir do próprio script — funciona em qualquer subpath
+// (ex.: GitHub Pages em /dominguez-plaza/).
+const LOGO_URL = (document.currentScript?.src || '').replace(/\/js\/main\.js.*$/, '/img/logo-placeholder.svg');
+
 // ── dataLayer GTM ──
 window.dataLayer = window.dataLayer || [];
 function pushLead(tipo) {
@@ -274,7 +278,7 @@ function submitBooking(e) {
       <div class="bk-modal-box">
         <button class="bk-close" onclick="closeBooking()" aria-label="Fechar">&times;</button>
         <div class="bk-header">
-          <img src="/assets/img/logo-placeholder.svg" alt="${HOTEL_NAME}" width="48" height="48">
+          <img src="${LOGO_URL}" alt="${HOTEL_NAME}" width="48" height="48">
           <div>
             <h3 id="bkTitle">Reserve sua Estadia</h3>
             <p>Preencha os dados e consulte disponibilidade</p>
