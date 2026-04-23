@@ -145,7 +145,14 @@ img.loaded { opacity:1; }
 .hqbeds-wrap { background:rgba(255,255,255,.97); padding:1rem 1.5rem; max-width:380px; margin:0 auto; box-shadow:0 8px 32px rgba(0,0,0,.22); display:flex; justify-content:center; align-items:center; }
 
 /* ── STRIP ── */
-.strip { background:var(--accent); padding:clamp(2.5rem,5vw,4rem) 0; }
+.strip {
+  background-color: var(--accent);
+  background-image: url('../img/texture-red.jpg');
+  background-size: 420px auto;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  padding: clamp(2.5rem,5vw,4rem) 0;
+}
 .strip-g { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
 .strip-i { padding:1rem; }
 .s-icon { font-size:2rem; margin-bottom:.8rem; color:#fff; }
@@ -168,7 +175,29 @@ img.loaded { opacity:1; }
 .cta-hero-ov { position:absolute; inset:0; background:linear-gradient(135deg,rgba(124,42,38,.85) 0%,rgba(48,14,14,.88) 100%); }
 
 /* ── EXPERIÊNCIAS PREVIEW ── */
-.exp-section { background:var(--accent-hover); }
+.exp-section {
+  background-color: var(--accent-hover);
+  background-image: url('../img/texture-red.jpg');
+  background-size: 420px auto;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
+/* ── DOBRAS VERMELHAS (utility) ── */
+.bg-texture-red {
+  background-color: var(--accent);
+  background-image: url('../img/texture-red.jpg');
+  background-size: 420px auto;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+.bg-texture-red-dark {
+  background-color: var(--accent-hover);
+  background-image: url('../img/texture-red.jpg');
+  background-size: 420px auto;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
 .exp-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; margin-top:clamp(2rem,4vw,3rem); }
 .exp-card { display:flex; flex-direction:column; }
 .exp-card-img { overflow:hidden; border-radius:10px; aspect-ratio:3/4; }
