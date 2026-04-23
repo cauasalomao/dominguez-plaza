@@ -25,31 +25,30 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 
 <style>
-.sec-red {
-  background-color: var(--accent);
+.sec-red, .sec-red-dark {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.sec-red { background: var(--accent); }
+.sec-red-dark { background: var(--accent-hover); }
+.sec-red::before, .sec-red-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('../assets/img/texture-red.jpg');
   background-size: 420px auto;
   background-repeat: repeat;
-  background-blend-mode: multiply;
-  color: #fff;
+  opacity: .45;
+  pointer-events: none;
+  z-index: 0;
 }
-.sec-red .overline { color: rgba(255,255,255,.7); }
-.sec-red h2, .sec-red h3, .sec-red h4 { color: #fff; }
-.sec-red p { color: rgba(255,255,255,.85); }
-.sec-red .divider { background: var(--cta); }
-
-.sec-red-dark {
-  background-color: var(--accent-hover);
-  background-image: url('../assets/img/texture-red.jpg');
-  background-size: 420px auto;
-  background-repeat: repeat;
-  background-blend-mode: multiply;
-  color: #fff;
-}
-.sec-red-dark .overline { color: rgba(255,255,255,.7); }
+.sec-red > .container, .sec-red-dark > .container { position: relative; z-index: 1; }
+.sec-red .overline, .sec-red-dark .overline { color: rgba(255,255,255,.7); }
+.sec-red h2, .sec-red h3, .sec-red h4,
 .sec-red-dark h2, .sec-red-dark h3, .sec-red-dark h4 { color: #fff; }
-.sec-red-dark p { color: rgba(255,255,255,.85); }
-.sec-red-dark .divider { background: var(--cta); }
+.sec-red p, .sec-red-dark p { color: rgba(255,255,255,.85); }
+.sec-red .divider, .sec-red-dark .divider { background: var(--cta); }
 
 .sec-photo { position: relative; isolation: isolate; clip-path: inset(0); color: #fff; overflow: hidden; }
 .sec-photo::before { content: ''; position: fixed; inset: 0; background-image: var(--bg-photo); background-size: cover; background-position: center; z-index: -2; }

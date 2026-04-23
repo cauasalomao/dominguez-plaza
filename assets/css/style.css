@@ -146,13 +146,23 @@ img.loaded { opacity:1; }
 
 /* ── STRIP ── */
 .strip {
-  background-color: var(--accent);
+  background: var(--accent);
+  padding: clamp(2.5rem,5vw,4rem) 0;
+  position: relative;
+  overflow: hidden;
+}
+.strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('../img/texture-red.jpg');
   background-size: 420px auto;
   background-repeat: repeat;
-  background-blend-mode: multiply;
-  padding: clamp(2.5rem,5vw,4rem) 0;
+  opacity: .45;
+  pointer-events: none;
+  z-index: 0;
 }
+.strip > .container { position: relative; z-index: 1; }
 .strip-g { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
 .strip-i { padding:1rem; }
 .s-icon { font-size:2rem; margin-bottom:.8rem; color:#fff; }
@@ -176,28 +186,45 @@ img.loaded { opacity:1; }
 
 /* ── EXPERIÊNCIAS PREVIEW ── */
 .exp-section {
-  background-color: var(--accent-hover);
+  background: var(--accent-hover);
+  position: relative;
+  overflow: hidden;
+}
+.exp-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('../img/texture-red.jpg');
   background-size: 420px auto;
   background-repeat: repeat;
-  background-blend-mode: multiply;
+  opacity: .4;
+  pointer-events: none;
+  z-index: 0;
 }
+.exp-section > .container { position: relative; z-index: 1; }
 
-/* ── DOBRAS VERMELHAS (utility) ── */
-.bg-texture-red {
-  background-color: var(--accent);
-  background-image: url('../img/texture-red.jpg');
-  background-size: 420px auto;
-  background-repeat: repeat;
-  background-blend-mode: multiply;
-}
+/* ── DOBRAS VERMELHAS (utility com textura ornamental) ── */
+.bg-texture-red,
 .bg-texture-red-dark {
-  background-color: var(--accent-hover);
+  position: relative;
+  overflow: hidden;
+}
+.bg-texture-red { background: var(--accent); }
+.bg-texture-red-dark { background: var(--accent-hover); }
+.bg-texture-red::before,
+.bg-texture-red-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('../img/texture-red.jpg');
   background-size: 420px auto;
   background-repeat: repeat;
-  background-blend-mode: multiply;
+  opacity: .45;
+  pointer-events: none;
+  z-index: 0;
 }
+.bg-texture-red > .container,
+.bg-texture-red-dark > .container { position: relative; z-index: 1; }
 .exp-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; margin-top:clamp(2rem,4vw,3rem); }
 .exp-card { display:flex; flex-direction:column; }
 .exp-card-img { overflow:hidden; border-radius:10px; aspect-ratio:3/4; }
