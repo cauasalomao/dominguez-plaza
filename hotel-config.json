@@ -74,7 +74,7 @@
         "Banheiro privativo",
         "Wi-Fi"
       ],
-      "image": "Fotos/suites/suites_0012.jpg"
+      "image": "Fotos/colonial.png"
     },
     {
       "category": "especial",
@@ -90,7 +90,7 @@
         "Banheiro privativo",
         "Wi-Fi"
       ],
-      "image": "Fotos/suites/suites_0003.JPG"
+      "image": "Fotos/especial.png"
     },
     {
       "category": "suite",
@@ -106,7 +106,7 @@
         "TV",
         "Wi-Fi"
       ],
-      "image": "Fotos/suites/suites_0008.JPG"
+      "image": "Fotos/suite.png"
     }
   ],
 
