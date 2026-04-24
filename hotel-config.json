@@ -62,64 +62,51 @@
 
   "accommodations": [
     {
+      "category": "colonial",
+      "name": "Apartamento Colonial",
+      "label": "Categoria mais básica — tradição clássica",
+      "capacity": "Casais e famílias",
+      "highlights": [
+        "Estrutura mais antiga / estilo clássico preservado",
+        "Ventilador (nem sempre ar-condicionado)",
+        "Frigobar",
+        "TV",
+        "Banheiro privativo",
+        "Wi-Fi"
+      ],
+      "image": "Fotos/suites/suites_0012.jpg"
+    },
+    {
       "category": "especial",
       "name": "Apartamento Especial",
-      "label": "Nossa categoria superior",
+      "label": "Um nível acima — mais moderno e confortável",
       "capacity": "Casais e famílias",
       "highlights": [
         "Ar-condicionado frio e quente",
-        "Varanda privativa com vista para as montanhas",
-        "Wi-Fi",
+        "Ambientes mais modernos que o Colonial",
+        "Pode ter varanda",
         "Frigobar",
         "TV",
-        "Banheiro privativo"
+        "Banheiro privativo",
+        "Wi-Fi"
       ],
       "image": "Fotos/suites/suites_0003.JPG"
     },
     {
-      "category": "chale",
-      "name": "Apartamento no Chalé",
-      "label": "Charme rústico em Nova Friburgo",
-      "capacity": "Casais e pequenas famílias",
+      "category": "suite",
+      "name": "Suíte",
+      "label": "Categoria mais alta — hidromassagem e mais espaço",
+      "capacity": "Casais",
       "highlights": [
-        "Ambiente aconchegante em estilo chalé",
-        "Varanda privativa",
-        "Wi-Fi",
-        "Frigobar",
-        "TV"
-      ],
-      "image": "Fotos/suites/suites_0005.JPG"
-    },
-    {
-      "category": "colonial-5",
-      "name": "Apartamento Colonial 5º Andar",
-      "label": "Vista privilegiada das montanhas",
-      "capacity": "Casais e famílias",
-      "highlights": [
-        "Localizado no 5º andar com vista ampla",
-        "Estilo colonial clássico",
-        "Wi-Fi",
+        "Hidromassagem (principal diferencial)",
+        "Ar-condicionado frio e quente",
+        "Mais espaço e ambiente reservado",
+        "Muitas com varanda e vista para as montanhas ou a cidade",
         "Frigobar",
         "TV",
-        "Banheiro privativo"
+        "Wi-Fi"
       ],
       "image": "Fotos/suites/suites_0008.JPG"
-    },
-    {
-      "category": "colonial",
-      "name": "Apartamento Colonial",
-      "label": "Tradição com conforto essencial",
-      "capacity": "Casais e famílias",
-      "highlights": [
-        "Estrutura clássica preservada",
-        "Estilo colonial tradicional",
-        "Ventilador (algumas unidades sem ar-condicionado)",
-        "Wi-Fi",
-        "Frigobar",
-        "TV",
-        "Banheiro privativo"
-      ],
-      "image": "Fotos/suites/suites_0012.jpg"
     }
   ],
 

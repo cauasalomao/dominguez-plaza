@@ -201,16 +201,15 @@ Fonte: os dois briefings `.md` na raiz. **Este bloco é a referência para qualq
 - **Site atual:** hoteldominguez.com.br.
 - **Posição:** Praça do Suspiro, centro histórico/turístico/comercial; acesso rápido a todas as entradas/saídas da região serrana (a "Suíça Brasileira").
 
-### Acomodações (4 categorias — diferentes do template)
+### Acomodações (3 categorias — diferentes do template)
 
-O template traz 4 chalés rurais. O Dominguez tem **4 categorias de apartamento** em prédio histórico:
+O template traz 4 chalés rurais. O Dominguez tem **3 categorias** em prédio histórico, em ordem do mais básico ao topo:
 
-1. **Apartamento no Chalé**
-2. **Apartamento Colonial** — categoria mais básica. Estrutura mais antiga, estilo clássico, ventilador (nem sempre ar-condicionado), frigobar, TV, banheiro privativo.
-3. **Apartamento Colonial — 5º Andar**
-4. **Apartamento Especial** — com ar-condicionado frio/quente.
+1. **Apartamento Colonial** — categoria mais básica. Estrutura mais antiga / estilo clássico, ventilador (nem sempre ar-condicionado), frigobar, TV, banheiro privativo. Conforto essencial, sem "luxos".
+2. **Apartamento Especial** — um nível acima. Ar-condicionado frio/quente, ambientes mais modernos, pode ter varanda. Mesma base (TV, frigobar, banheiro privativo), mas qualidade geral melhor.
+3. **Suíte** — categoria mais alta. **Hidromassagem** (principal diferencial), ar-condicionado, mais espaço, ambiente reservado. Muitas com varanda e vista para as montanhas ou para a cidade.
 
-**Suítes** (não são uma 5ª categoria separada na listagem do site, mas aparecem no briefing): hidromassagem e ar-condicionado frio/quente. A maioria dos apartamentos e suítes tem **varanda privativa** com vista para as montanhas — diferencial de copy.
+Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento privativo próprio** (destaque no copy), apartamentos adaptados para necessidades especiais, voltagem 220V em toda a cidade.
 
 Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento privativo próprio** (destaque no copy), apartamentos adaptados para necessidades especiais, voltagem 220V em toda a cidade.
 
@@ -267,7 +266,7 @@ Nada disso está feito ainda. Sugestão de sequência:
 1. Reescrever `hotel-config.json` com os dados reais do Dominguez (ver "Contexto do cliente" acima). Ajustar `_template_note`.
 2. Atualizar constantes no topo de `assets/js/main.js` (`WEBHOOK_URL`, `HOTEL_NAME="Hotel Dominguez Plaza"`, `WA_NUMBER="5522992938225"` sem pontuação, `WA_MESSAGE`, `BOOKING_URL`, `MOTOR_BASE="https://reservas.desbravador.com.br/hotel-app/hotel-dominguez-plaza/reservation"`) e **reescrever a função que monta a URL do motor** de path-based (Foco Multimídia) para query-string (Desbravador, com `child1..N` por criança).
 3. Find/replace textual em todos os HTMLs (nome, cidade, UF, contatos, handles sociais — usar a tabela do `README.md` adaptada).
-4. Substituir conteúdo de `/acomodacoes/` para as 4 categorias de apartamento (não chalés).
+4. Substituir conteúdo de `/acomodacoes/` para as 3 categorias (Colonial, Especial, Suíte) — não chalés.
 5. Substituir conteúdo de `/sobre/` com a história da família Dominguez (110 anos do prédio + 55 da gestão).
 6. Reavaliar `/experiencia/` — o template traz cavalgadas/pescaria; o Dominguez é hotel urbano. Atrações são o centro histórico, piscina, café da manhã da horta, passeios por Nova Friburgo.
 7. Criar `/eventos/` (ou embutir em `/experiencia/`) — espaços para 30–200 pessoas.
