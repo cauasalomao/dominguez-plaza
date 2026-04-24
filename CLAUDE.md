@@ -289,8 +289,10 @@ Nada disso está feito ainda. Sugestão de sequência:
 
 Commits locais automáticos na branch `main` são ok e esperados após cada alteração de código, sem precisar pedir.
 
-**Push para o GitHub, porém, NÃO é automático.** Um push anterior do template base sobrescreveu o repositório de um cliente real em produção. Para evitar reincidência:
+**Push para o GitHub é automatizado via hook Stop** configurado em `.claude/settings.local.json`. O hook roda `git push origin main` no final de cada resposta (só empurra se a branch ativa for `main`; falha graciosa com `|| true` se não houver o que empurrar ou se algo estiver errado). Remote `origin` = `https://github.com/cauasalomao/dominguez-plaza.git` — autorizado em 2026-04-24 pelo usuário.
 
-- **Nunca** rodar `git push`, `gh pr create`, `gh repo create`, ou qualquer comando que envie conteúdo deste diretório para o GitHub por iniciativa própria.
-- Publicar só quando o usuário **explicitamente** fornecer, na mesma instrução, **(a)** a URL do repositório remoto correto **e (b)** a ordem clara de dar push/publicar. Ambos os itens precisam estar presentes — um sem o outro não basta.
-- Antes de executar o push autorizado, rodar `git remote -v` e confirmar que o remote aponta para a URL fornecida (adicionar/ajustar `origin` se necessário).
+Contexto histórico: antes desse hook, a política era "não empurrar por iniciativa própria" — um push do template base tinha sobrescrito o repositório de um cliente em produção. A automação só faz sentido porque este repositório (`cauasalomao/dominguez-plaza`) é de staging do próprio desenvolvedor, não o ambiente do cliente final (`hoteldominguez.com.br`).
+
+Se for necessário trabalhar em outra branch (feature branch, hotfix) sem empurrar, o check do hook (`[ "$(git rev-parse --abbrev-ref HEAD)" = "main" ]`) já garante que só `main` é empurrada. Para desabilitar temporariamente, editar `.claude/settings.local.json` removendo a seção `hooks`.
+
+Se o usuário pedir push para **outro remote**, ainda aplicar a checagem antiga: URL + ordem na mesma instrução, mais `git remote -v` de conferência antes de executar.
