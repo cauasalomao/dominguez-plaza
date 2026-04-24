@@ -254,12 +254,12 @@ img.loaded { opacity:1; }
 .rp-info span { font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.72); }
 
 /* ── PAGE HERO (subpáginas) ── */
-.pg-hero { position:relative; height:55vh; min-height:380px; display:flex; align-items:flex-end; overflow:hidden; }
+.pg-hero { position:relative; height:55vh; min-height:440px; display:flex; align-items:center; overflow:hidden; padding-top:80px; }
 .pg-hero > img { position:absolute; inset:0; width:100%; height:115%; object-fit:cover; }
 .pg-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to top,rgba(48,14,14,.78) 0%,rgba(48,14,14,.25) 60%,transparent 100%); }
-.pg-hero-c { position:relative; z-index:2; color:#fff; padding:3rem clamp(1.5rem,4vw,3rem); max-width:1400px; margin:0 auto; width:100%; text-align:center; }
-.pg-hero-c .overline { color:rgba(255,255,255,.72); margin-bottom:.5rem; display:block; }
-.pg-hero-c h1 { font-size:clamp(2.5rem,6vw,5rem); color:#fff; max-width:900px; margin:0 auto; line-height:1.1; }
+.pg-hero-c { position:relative; z-index:2; color:#fff; padding:1.5rem clamp(1.5rem,4vw,3rem); max-width:1400px; margin:0 auto; width:100%; text-align:center; }
+.pg-hero-c .overline { color:rgba(255,255,255,.72); margin-bottom:.8rem; display:block; }
+.pg-hero-c h1 { font-size:clamp(1.9rem,4.2vw,3.4rem); color:#fff; max-width:900px; margin:0 auto; line-height:1.15; }
 
 /* ── ACOMODAÇÕES ── */
 .fbr { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:3rem; justify-content:center; }
