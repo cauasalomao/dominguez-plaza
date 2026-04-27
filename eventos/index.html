@@ -40,6 +40,11 @@
   }
 }
 </script>
+
+<style>
+  .aud-card.aud-icon { background:var(--accent); display:flex; align-items:center; justify-content:center; }
+  .aud-card.aud-icon i { color:#fff; font-size:clamp(3.5rem,7vw,5.5rem); line-height:1; transform:translateY(-12%); }
+</style>
 </head>
 <body>
 
@@ -104,19 +109,16 @@
       <div class="divider cx"></div>
     </div>
     <div class="aud-grid">
-      <div class="aud-card">
-        <img src="../Fotos/eventos/eventos_0010.jpg" alt="Casamentos no Hotel Dominguez Plaza" loading="lazy">
-        <div class="aud-ov"></div>
+      <div class="aud-card aud-icon">
+        <i class="ph-thin ph-heart-straight" aria-hidden="true"></i>
         <div class="aud-label">Casamentos</div>
       </div>
-      <div class="aud-card">
-        <img src="../Fotos/eventos/eventos_0030.jpg" alt="Conferências e convenções no Hotel Dominguez Plaza" loading="lazy">
-        <div class="aud-ov"></div>
+      <div class="aud-card aud-icon">
+        <i class="ph-thin ph-presentation-chart" aria-hidden="true"></i>
         <div class="aud-label">Conferências e Convenções</div>
       </div>
-      <div class="aud-card">
-        <img src="../Fotos/eventos/eventos_0050.jpg" alt="Festas e comemorações no Hotel Dominguez Plaza" loading="lazy">
-        <div class="aud-ov"></div>
+      <div class="aud-card aud-icon">
+        <i class="ph-thin ph-music-notes" aria-hidden="true"></i>
         <div class="aud-label">Festas e Comemorações</div>
       </div>
     </div>
