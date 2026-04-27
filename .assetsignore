@@ -1,0 +1,24 @@
+# Arquivos que NÃO devem ser publicados como assets no Cloudflare Workers.
+# Sintaxe estilo .gitignore. Avaliado a partir da raiz dos assets.
+
+# Repositório git (ENORME — provoca "Asset too large" sem isso)
+.git
+.git/**
+
+# Configurações e documentos internos
+CLAUDE.md
+README.md
+*Briefing*.md
+.gitignore
+.nojekyll
+
+# Scripts de build/manutenção (Python, não são servidos)
+*.py
+
+# Configs de deploy
+wrangler.jsonc
+wrangler.toml
+
+# Logs e screenshots locais
+*.log
+Captura de tela*.png
