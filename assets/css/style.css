@@ -475,6 +475,10 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
   .nav { display:none; }
   .ham { display:flex; }
   .hdr-btn { display:none; }
+  .logo-img { height:52px; }
+  .mobnav { gap:1.1rem; padding:5rem 1.25rem 2rem; justify-content:flex-start; overflow-y:auto; }
+  .mobnav a { font-size:clamp(1.3rem,4.5vw,1.9rem); text-align:center; max-width:100%; }
+  .mobnav .btn-gold { font-size:.7rem!important; padding:.75rem 1.6rem!important; margin-top:1.4rem!important; }
   .ab-grid,.ct-grid,.loc-grid,.sobre-hero-txt { grid-template-columns:1fr; }
   .rp-g, .rp-g-4 { grid-template-columns:1fr 1fr; }
   .exp-cards { grid-template-columns:1fr 1fr; }
