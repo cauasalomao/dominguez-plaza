@@ -41,6 +41,14 @@
   }
 }
 </script>
+
+<style>
+  .sobre-decadas { display:grid; grid-template-columns:repeat(4,1fr); gap:1.25rem; margin-top:clamp(4rem,8vw,7rem); }
+  .sobre-decadas figure { margin:0; }
+  .sobre-decadas img { width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; display:block; background:var(--surface-light); }
+  .sobre-decadas figcaption { font-family:var(--font-display); font-size:.75rem; letter-spacing:.28em; text-transform:uppercase; color:var(--accent); text-align:center; margin-top:.75rem; }
+  @media (max-width:768px){ .sobre-decadas { grid-template-columns:repeat(2,1fr); } }
+</style>
 </head>
 <body>
 
@@ -80,7 +88,7 @@
   <img src="../Fotos/areas-externas/areas-externas_0002.jpg" alt="Fachada histórica do Hotel Dominguez Plaza na Praça do Suspiro">
   <div class="pg-hero-c">
     <span class="overline">Nossa História</span>
-    <h1>110 anos de prédio, 55 de família</h1>
+    <h1>110 anos de prédio,<br>55 de família</h1>
   </div>
 </section>
 
@@ -99,16 +107,23 @@
       </div>
     </div>
 
-    <div class="sobre-imgs">
-      <div class="sobre-img-big">
-        <img src="../Fotos/areas-externas/areas-externas_0001.jpg" alt="Vista panorâmica do Hotel Dominguez Plaza em Nova Friburgo" loading="lazy">
-      </div>
-      <div class="sobre-img-sm">
-        <img src="../Fotos/areas-comuns/areas-comuns_0002.JPG" alt="Hall de entrada com decoração clássica" loading="lazy">
-      </div>
-      <div class="sobre-img-sm">
-        <img src="../Fotos/detalhes/detalhes_0001.jpg" alt="Detalhes da arquitetura preservada do Hotel Dominguez Plaza" loading="lazy">
-      </div>
+    <div class="sobre-decadas">
+      <figure>
+        <img src="../Fotos/anos50.jpg" alt="Hotel Dominguez Plaza nos anos 1950" loading="lazy">
+        <figcaption>Anos 50</figcaption>
+      </figure>
+      <figure>
+        <img src="../Fotos/anos70.jpg" alt="Hotel Dominguez Plaza nos anos 1970" loading="lazy">
+        <figcaption>Anos 70</figcaption>
+      </figure>
+      <figure>
+        <img src="../Fotos/anos80.jpg" alt="Hotel Dominguez Plaza nos anos 1980" loading="lazy">
+        <figcaption>Anos 80</figcaption>
+      </figure>
+      <figure>
+        <img src="../Fotos/anos90.jpg" alt="Hotel Dominguez Plaza nos anos 1990" loading="lazy">
+        <figcaption>Anos 90</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -134,17 +149,12 @@
 <!-- HISTÓRIA DA FAMÍLIA -->
 <section style="background:var(--bg)">
   <div class="container">
-    <div class="ab-grid" style="direction:rtl">
-      <div style="direction:ltr" class="ab-img">
-        <img src="../Fotos/equipe/equipe_0001.jpg" alt="Equipe do Hotel Dominguez Plaza" loading="lazy">
-      </div>
-      <div style="direction:ltr" class="ab-txt">
-        <p class="overline">A Família Dominguez</p>
-        <h2>Sr. Julio e Dona Glória, <span class="script script-accent">o começo de tudo</span></h2>
-        <div class="divider" style="margin:1.5rem 0"></div>
-        <p>A trajetória da família Dominguez no Brasil começou com o Sr. Julio, que chegou ao país aos 15 anos em busca de melhores oportunidades. Atuou inicialmente no Hotel São Paulo, de familiares distantes, e depois mudou-se para o Rio de Janeiro para trabalhar como garçom.</p>
-        <p>Dona Glória chegou ao Brasil em 1950, aos 11 anos, com sua família. O casal se conheceu por volta de 1957 e se casou em 16 de dezembro de 1961, na Catedral São João Batista. Começaram a vida empreendedora com o Bar Tingly, onde também residiam, e com trabalho constante e foco em crescimento, consolidaram o legado de hospitalidade que hoje é o Hotel Dominguez Plaza.</p>
-      </div>
+    <div class="ab-txt" style="max-width:780px;margin:0 auto;text-align:center;align-items:center">
+      <p class="overline">A Família Dominguez</p>
+      <h2>Sr. Julio e Dona Glória, <span class="script script-accent">o começo de tudo</span></h2>
+      <div class="divider" style="margin:1.5rem auto"></div>
+      <p>A trajetória da família Dominguez no Brasil começou com o Sr. Julio, que chegou ao país aos 15 anos em busca de melhores oportunidades. Atuou inicialmente no Hotel São Paulo, de familiares distantes, e depois mudou-se para o Rio de Janeiro para trabalhar como garçom.</p>
+      <p>Dona Glória chegou ao Brasil em 1950, aos 11 anos, com sua família. O casal se conheceu por volta de 1957 e se casou em 16 de dezembro de 1961, na Catedral São João Batista. Começaram a vida empreendedora com o Bar Tingly, onde também residiam, e com trabalho constante e foco em crescimento, consolidaram o legado de hospitalidade que hoje é o Hotel Dominguez Plaza.</p>
     </div>
   </div>
 </section>
@@ -152,17 +162,12 @@
 <!-- MARISA -->
 <section style="background:var(--surface)">
   <div class="container">
-    <div class="ab-grid">
-      <div class="ab-img">
-        <img src="../Fotos/equipe/equipe_0003.jpg" alt="Marisa Dominguez, sócia e administradora do Hotel Dominguez Plaza" loading="lazy">
-      </div>
-      <div class="ab-txt">
-        <p class="overline">Gestão Atual</p>
-        <h2>Marisa Dominguez <span class="script script-accent">continua o legado</span></h2>
-        <div class="divider" style="margin:1.5rem 0"></div>
-        <p>Marisa Dominguez cresceu dentro da operação hoteleira. Ingressou no hotel aos sete anos de idade, quando sua família assumiu a administração do empreendimento. Desde cedo participou da rotina operacional, atuando em recepção, atendimento ao cliente, apoio operacional e rotinas administrativas.</p>
-        <p>Cursou Administração em Nova Friburgo e assumiu a gestão ao lado do pai. Atualmente lidera o hotel com apoio de uma equipe experiente e treinada, mantendo os valores que fizeram do Dominguez Plaza uma referência: atendimento de excelência, continuidade do legado familiar e preparação para os 55 anos de história.</p>
-      </div>
+    <div class="ab-txt" style="max-width:780px;margin:0 auto;text-align:center;align-items:center">
+      <p class="overline">Gestão Atual</p>
+      <h2>Marisa Dominguez <span class="script script-accent">continua o legado</span></h2>
+      <div class="divider" style="margin:1.5rem auto"></div>
+      <p>Marisa Dominguez cresceu dentro da operação hoteleira. Ingressou no hotel aos sete anos de idade, quando sua família assumiu a administração do empreendimento. Desde cedo participou da rotina operacional, atuando em recepção, atendimento ao cliente, apoio operacional e rotinas administrativas.</p>
+      <p>Cursou Administração em Nova Friburgo e assumiu a gestão ao lado do pai. Atualmente lidera o hotel com apoio de uma equipe experiente e treinada, mantendo os valores que fizeram do Dominguez Plaza uma referência: atendimento de excelência, continuidade do legado familiar e preparação para os 55 anos de história.</p>
     </div>
   </div>
 </section>
