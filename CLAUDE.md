@@ -92,7 +92,7 @@ https://reservas.desbravador.com.br/hotel-app/hotel-dominguez-plaza/reservation?
 Parâmetros:
 - `checkin`, `checkout` — ISO `YYYY-MM-DD`.
 - `adults` — inteiro.
-- `child1`, `child2`, `child3` — idade de cada criança (um parâmetro por criança, **não** uma lista). Ao gerar a URL, emitir `child1..N` conforme a quantidade selecionada no select de crianças.
+- `child1`, `child2`, `child3` — **contagem de crianças por faixa etária**, não idade individual. `child1` = quantidade até 7 anos, `child2` = quantidade de 8 a 12 anos, `child3` = reservado (sempre `0` no formato observado). Exemplo: 2 crianças de 5 anos + 1 de 10 anos → `child1=2&child2=1&child3=0`. **Cuidado:** intuitivamente parece "idade do filho N", mas é "quantos filhos na faixa N" — mandar `child1=7` não é "1 criança de 7 anos", é "7 crianças até 7 anos". O modal coleta faixa etária por criança e em `submitBooking` faz o bucketing antes de montar a URL.
 - `voucher` — string (pode ficar vazio).
 - `resident` — `0` por padrão.
 

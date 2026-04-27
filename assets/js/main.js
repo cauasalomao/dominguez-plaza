@@ -217,13 +217,23 @@ document.addEventListener('visibilitychange', () => {
 })();
 
 // ── MODAL DE RESERVA (Desbravador) ──
-function buildBookingURL(checkin, checkout, adults, childAges) {
+// Desbravador interpreta child1/child2/child3 como CONTAGEM por faixa etária,
+// não como idade individual. Faixas: child1 = até 7 anos, child2 = 8 a 12 anos,
+// child3 = reservado (mantemos sempre 0).
+function buildBookingURL(checkin, checkout, adults, childBrackets) {
   if (!checkin || !checkout) return null;
   const params = new URLSearchParams();
   params.set('checkin', checkin);
   params.set('checkout', checkout);
   params.set('adults', String(adults || 1));
-  (childAges || []).forEach((age, i) => params.set(`child${i + 1}`, String(age)));
+  let c1 = 0, c2 = 0;
+  (childBrackets || []).forEach(b => {
+    if (String(b) === '1') c1++;
+    else if (String(b) === '2') c2++;
+  });
+  params.set('child1', String(c1));
+  params.set('child2', String(c2));
+  params.set('child3', '0');
   params.set('voucher', '');
   params.set('resident', '0');
   return `${MOTOR_BASE}?${params.toString()}`;
@@ -246,9 +256,10 @@ function updateChildAges() {
   for (let i = 0; i < n; i++) {
     const fg = document.createElement('div');
     fg.className = 'fg';
-    fg.innerHTML = `<label>Idade criança ${i + 1}</label>
+    fg.innerHTML = `<label>Faixa etária criança ${i + 1}</label>
       <select id="bk-child-${i}">
-        ${Array.from({length:13}, (_, a) => `<option value="${a}">${a} ${a===1?'ano':'anos'}</option>`).join('')}
+        <option value="1">Até 7 anos</option>
+        <option value="2">8 a 12 anos</option>
       </select>`;
     container.appendChild(fg);
   }
@@ -260,12 +271,12 @@ function submitBooking(e) {
   const co = document.getElementById('bk-checkout').value;
   const adults = document.getElementById('bk-adults').value;
   const nChildren = parseInt(document.getElementById('bk-children')?.value || '0');
-  const childAges = [];
+  const childBrackets = [];
   for (let i = 0; i < nChildren; i++) {
-    const age = document.getElementById(`bk-child-${i}`)?.value;
-    if (age !== undefined) childAges.push(age);
+    const b = document.getElementById(`bk-child-${i}`)?.value;
+    if (b !== undefined) childBrackets.push(b);
   }
-  const url = buildBookingURL(ci, co, adults, childAges);
+  const url = buildBookingURL(ci, co, adults, childBrackets);
   if (url) window.open(url, '_blank', 'noopener');
   closeBooking();
 }
