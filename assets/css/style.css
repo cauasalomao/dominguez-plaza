@@ -285,6 +285,10 @@ img.loaded { opacity:1; }
 .cb-dots { position:absolute; bottom:.6rem; left:0; right:0; display:flex; justify-content:center; gap:.35rem; z-index:2; }
 .cb-dots .dot { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.55); border:none; padding:0; cursor:pointer; transition:background .2s,transform .2s; }
 .cb-dots .dot.active { background:#fff; transform:scale(1.2); }
+.cb-fs { position:absolute; top:.6rem; right:.6rem; width:36px; height:36px; background:rgba(0,0,0,.45); color:#fff; border:none; border-radius:8px; cursor:pointer; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity .3s,background .2s; z-index:3; }
+.cb-fs:hover { background:rgba(0,0,0,.75); }
+.rp-c:hover .cb-fs,.rc-img:hover .cb-fs,.carousel:focus-within .cb-fs { opacity:1; }
+@media (hover: none) { .cb,.cb-fs { opacity:1; } }
 .rc-b { padding:1.4rem 1.6rem; }
 .rc-b h3 { font-size:clamp(1rem,1.8vw,1.5rem); margin-bottom:.5rem; }
 .rc-b p { font-size:.86rem; margin-bottom:.8rem; max-width:100%; }

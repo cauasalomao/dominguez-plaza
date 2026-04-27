@@ -96,6 +96,17 @@ function filterGal(cat, btn) {
 }
 
 // ── LIGHTBOX ──
+// Markup injetado uma vez por página; idempotente.
+if (!document.getElementById('lb')) {
+  document.body.insertAdjacentHTML('beforeend', `
+    <div id="lb">
+      <button class="lb-close" onclick="closeLB()" aria-label="Fechar">×</button>
+      <button class="lb-nav lb-prev" onclick="navLB(-1)" aria-label="Anterior">‹</button>
+      <img id="lbImg" alt="">
+      <button class="lb-nav lb-next" onclick="navLB(1)" aria-label="Próxima">›</button>
+      <div id="lbCnt"></div>
+    </div>`);
+}
 let lbCur = 0; const LB_SRCS = [];
 function openLB(i) {
   lbCur=i; const lbImg=document.getElementById('lbImg'); const lbCnt=document.getElementById('lbCnt');
@@ -343,15 +354,15 @@ function submitBooking(e) {
 })();
 
 // ── CARROSSEL DE FOTOS (.carousel) ──
-// Auto-rotaciona a cada 5s; prev/next/dots dão controle manual.
-// Para por interação manual e em :hover (UX); cuida do preventDefault
-// quando estiver dentro de um <a> (cards da home).
+// Navegação 100% manual (prev/next/dots). Botão de tela cheia injetado
+// dinamicamente reaproveita o lightbox global (LB_SRCS + openLB), usando
+// data-full de cada <img> (caminho da versão média) quando disponível.
 function initCarousel(el) {
   const imgs = el.querySelectorAll('img');
   const dots = el.querySelectorAll('.dot');
   const n = imgs.length;
-  if (n <= 1) return;
-  let idx = 0, timer = null, paused = false;
+  if (n === 0) return;
+  let idx = 0;
   function go(newIdx) {
     imgs[idx].classList.remove('active');
     dots[idx]?.classList.remove('active');
@@ -359,13 +370,10 @@ function initCarousel(el) {
     imgs[idx].classList.add('active');
     dots[idx]?.classList.add('active');
   }
-  function start() { stop(); timer = setInterval(() => { if (!paused) go(idx + 1); }, 5000); }
-  function stop() { if (timer) { clearInterval(timer); timer = null; } }
   function bindBtn(sel, delta) {
     el.querySelector(sel)?.addEventListener('click', e => {
       e.preventDefault(); e.stopPropagation();
       go(idx + delta);
-      start();
     });
   }
   bindBtn('.cb-prev', -1);
@@ -373,10 +381,23 @@ function initCarousel(el) {
   dots.forEach((d, i) => d.addEventListener('click', e => {
     e.preventDefault(); e.stopPropagation();
     go(i);
-    start();
   }));
-  el.addEventListener('mouseenter', () => paused = true);
-  el.addEventListener('mouseleave', () => paused = false);
-  start();
+
+  // Botão fullscreen (ícone expand). Injetado se ainda não existir.
+  let fs = el.querySelector('.cb-fs');
+  if (!fs) {
+    fs = document.createElement('button');
+    fs.type = 'button';
+    fs.className = 'cb-fs';
+    fs.setAttribute('aria-label', 'Abrir em tela cheia');
+    fs.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+    el.appendChild(fs);
+  }
+  fs.addEventListener('click', e => {
+    e.preventDefault(); e.stopPropagation();
+    LB_SRCS.length = 0;
+    imgs.forEach(img => LB_SRCS.push(img.dataset.full || img.src));
+    openLB(idx);
+  });
 }
 document.querySelectorAll('.carousel').forEach(initCarousel);
