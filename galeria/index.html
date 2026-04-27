@@ -223,6 +223,12 @@ GALLERY.forEach((item, i) => {
   gi.setAttribute('onclick', `openLB(${i})`);
   gi.innerHTML = `<img src="${src}" alt="${alt}" loading="lazy">`;
   grid.appendChild(gi);
+  const img = gi.querySelector('img');
+  if (img.complete && img.naturalWidth > 0) img.classList.add('loaded');
+  else {
+    img.addEventListener('load',  () => img.classList.add('loaded'), {once:true});
+    img.addEventListener('error', () => img.classList.add('loaded'), {once:true});
+  }
 });
 </script>
 
