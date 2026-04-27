@@ -341,3 +341,42 @@ function submitBooking(e) {
   bk?.addEventListener('click', e => { if (e.target === bk) closeBooking(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk?.classList.contains('open')) closeBooking(); });
 })();
+
+// ── CARROSSEL DE FOTOS (.carousel) ──
+// Auto-rotaciona a cada 5s; prev/next/dots dão controle manual.
+// Para por interação manual e em :hover (UX); cuida do preventDefault
+// quando estiver dentro de um <a> (cards da home).
+function initCarousel(el) {
+  const imgs = el.querySelectorAll('img');
+  const dots = el.querySelectorAll('.dot');
+  const n = imgs.length;
+  if (n <= 1) return;
+  let idx = 0, timer = null, paused = false;
+  function go(newIdx) {
+    imgs[idx].classList.remove('active');
+    dots[idx]?.classList.remove('active');
+    idx = (newIdx + n) % n;
+    imgs[idx].classList.add('active');
+    dots[idx]?.classList.add('active');
+  }
+  function start() { stop(); timer = setInterval(() => { if (!paused) go(idx + 1); }, 5000); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  function bindBtn(sel, delta) {
+    el.querySelector(sel)?.addEventListener('click', e => {
+      e.preventDefault(); e.stopPropagation();
+      go(idx + delta);
+      start();
+    });
+  }
+  bindBtn('.cb-prev', -1);
+  bindBtn('.cb-next', 1);
+  dots.forEach((d, i) => d.addEventListener('click', e => {
+    e.preventDefault(); e.stopPropagation();
+    go(i);
+    start();
+  }));
+  el.addEventListener('mouseenter', () => paused = true);
+  el.addEventListener('mouseleave', () => paused = false);
+  start();
+}
+document.querySelectorAll('.carousel').forEach(initCarousel);
