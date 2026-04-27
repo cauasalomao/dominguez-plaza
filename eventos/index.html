@@ -42,8 +42,19 @@
 </script>
 
 <style>
-  .aud-card.aud-icon { background:var(--accent); display:flex; align-items:center; justify-content:center; }
-  .aud-card.aud-icon i { color:#fff; font-size:clamp(3.5rem,7vw,5.5rem); line-height:1; transform:translateY(-12%); }
+  /* Cards "convite" — Celebrações, encontros e negócios */
+  .evt-types { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:clamp(1rem, 2vw, 1.75rem); max-width:1100px; margin:0 auto; }
+  .evt-card { background:var(--bg); border:1px solid rgba(var(--cta-rgb), .28); padding:clamp(2.2rem, 3.5vw, 3.2rem) clamp(1.5rem, 2.5vw, 2.2rem); text-align:center; display:flex; flex-direction:column; align-items:center; position:relative; transition:transform .45s var(--ease), border-color .3s, box-shadow .45s var(--ease); }
+  .evt-card::before { content:''; position:absolute; inset:9px; border:1px solid rgba(var(--cta-rgb), .22); pointer-events:none; transition:border-color .3s; }
+  .evt-card:hover { transform:translateY(-6px); border-color:rgba(var(--cta-rgb), .6); box-shadow:0 22px 44px -28px rgba(var(--accent-rgb), .35); }
+  .evt-card:hover::before { border-color:rgba(var(--cta-rgb), .5); }
+  .evt-icon-wrap { width:96px; height:96px; border-radius:50%; background:rgba(var(--accent-rgb), .06); border:1px solid rgba(var(--accent-rgb), .12); display:flex; align-items:center; justify-content:center; margin-bottom:1.6rem; transition:background .3s, border-color .3s; }
+  .evt-card:hover .evt-icon-wrap { background:rgba(var(--accent-rgb), .09); border-color:rgba(var(--accent-rgb), .22); }
+  .evt-icon-wrap i { font-size:2.6rem; color:var(--accent); line-height:1; }
+  .evt-title { font-family:var(--font-display); font-size:clamp(1.2rem, 1.9vw, 1.55rem); font-weight:500; color:var(--accent); letter-spacing:.04em; margin:0; line-height:1.25; }
+  .evt-rule { display:block; width:42px; height:1px; background:var(--cta); margin:1.1rem auto 1.2rem; opacity:.85; }
+  .evt-desc { font-size:.88rem; line-height:1.65; color:var(--text-muted); max-width:260px; margin:0; }
+  @media (max-width: 760px) { .evt-types { grid-template-columns:1fr; max-width:420px; } }
 </style>
 </head>
 <body>
@@ -108,19 +119,25 @@
       <h2>Celebrações, encontros <span class="script script-accent">e negócios</span></h2>
       <div class="divider cx"></div>
     </div>
-    <div class="aud-grid">
-      <div class="aud-card aud-icon">
-        <i class="ph-thin ph-heart-straight" aria-hidden="true"></i>
-        <div class="aud-label">Casamentos</div>
-      </div>
-      <div class="aud-card aud-icon">
-        <i class="ph-thin ph-presentation-chart" aria-hidden="true"></i>
-        <div class="aud-label">Conferências e Convenções</div>
-      </div>
-      <div class="aud-card aud-icon">
-        <i class="ph-thin ph-music-notes" aria-hidden="true"></i>
-        <div class="aud-label">Festas e Comemorações</div>
-      </div>
+    <div class="evt-types">
+      <article class="evt-card">
+        <div class="evt-icon-wrap"><i class="ph-thin ph-heart-straight" aria-hidden="true"></i></div>
+        <h3 class="evt-title">Casamentos</h3>
+        <span class="evt-rule" aria-hidden="true"></span>
+        <p class="evt-desc">Cerimônias e recepções inesquecíveis para até 200 convidados em prédio histórico.</p>
+      </article>
+      <article class="evt-card">
+        <div class="evt-icon-wrap"><i class="ph-thin ph-presentation-chart" aria-hidden="true"></i></div>
+        <h3 class="evt-title">Conferências e Convenções</h3>
+        <span class="evt-rule" aria-hidden="true"></span>
+        <p class="evt-desc">Salas funcionais com áudio, vídeo e infraestrutura completa para reuniões corporativas.</p>
+      </article>
+      <article class="evt-card">
+        <div class="evt-icon-wrap"><i class="ph-thin ph-music-notes" aria-hidden="true"></i></div>
+        <h3 class="evt-title">Festas e Comemorações</h3>
+        <span class="evt-rule" aria-hidden="true"></span>
+        <p class="evt-desc">Aniversários, formaturas e confraternizações com decoração e cardápio personalizados.</p>
+      </article>
     </div>
   </div>
 </section>
