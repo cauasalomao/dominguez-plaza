@@ -12,7 +12,7 @@ const MOTOR_BASE  = 'https://reservas.desbravador.com.br/hotel-app/hotel-domingu
 
 // Resolve URL do logo a partir do próprio script — funciona em qualquer subpath
 // (ex.: GitHub Pages em /dominguez-plaza/).
-const LOGO_URL = (document.currentScript?.src || '').replace(/\/js\/main\.js.*$/, '/img/logo-placeholder.svg');
+const LOGO_URL = (document.currentScript?.src || '').replace(/\/js\/main\.js.*$/, '/img/logo.png');
 
 // ── dataLayer GTM ──
 window.dataLayer = window.dataLayer || [];
