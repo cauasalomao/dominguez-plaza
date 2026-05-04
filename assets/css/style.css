@@ -514,7 +514,7 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
   .strip-g { grid-template-columns:repeat(2,1fr); }
 }
 @media(max-width:768px){
-  .hero { height:auto; min-height:100vh; justify-content:flex-start; padding:7.5rem 0 3rem; }
+  .hero { height:auto; min-height:100vh; justify-content:center; padding:7.5rem 0 3rem; }
   .hero-c { gap:1.5rem; padding:0 1.5rem; }
   .hero-overline { font-size:.6rem; letter-spacing:.28em; font-weight:500; color:rgba(255,255,255,.72); }
   .hero-title { font-size:clamp(2.2rem,8vw,3.2rem)!important; line-height:1.05; letter-spacing:.01em; font-weight:500; }
