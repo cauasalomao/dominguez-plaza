@@ -292,6 +292,40 @@ function submitBooking(e) {
   closeBooking();
 }
 
+// ── WIDGET DE RESERVAS NA HERO ──
+// Reaproveita buildBookingURL — mesma lógica de bucketing por faixa etária.
+function updateHeroChildAges() {
+  const n = parseInt(document.getElementById('hb-children')?.value || '0');
+  const container = document.getElementById('hbChildAges');
+  if (!container) return;
+  container.innerHTML = '';
+  for (let i = 0; i < n; i++) {
+    const fg = document.createElement('div');
+    fg.className = 'fg';
+    fg.innerHTML = `<label>Faixa etária criança ${i + 1}</label>
+      <select id="hb-child-${i}">
+        <option value="1">Até 7 anos</option>
+        <option value="2">8 a 12 anos</option>
+      </select>`;
+    container.appendChild(fg);
+  }
+}
+
+function submitHeroBooking(e) {
+  e.preventDefault();
+  const ci = document.getElementById('hb-checkin').value;
+  const co = document.getElementById('hb-checkout').value;
+  const adults = document.getElementById('hb-adults').value;
+  const nChildren = parseInt(document.getElementById('hb-children')?.value || '0');
+  const childBrackets = [];
+  for (let i = 0; i < nChildren; i++) {
+    const b = document.getElementById(`hb-child-${i}`)?.value;
+    if (b !== undefined) childBrackets.push(b);
+  }
+  const url = buildBookingURL(ci, co, adults, childBrackets);
+  if (url) window.open(url, '_blank', 'noopener');
+}
+
 // Injeta o modal de reservas no final do body
 (function injectBookingModal() {
   const waText = encodeURIComponent('Olá, gostaria de fazer uma reserva.');

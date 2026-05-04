@@ -131,6 +131,21 @@ img.loaded { opacity:1; }
 .hero-divider { width:50px; height:1.5px; background:var(--cta); margin:0; display:none; }
 .hero-sub { font-family:var(--font-body); font-size:clamp(1rem,1.6vw,1.25rem); color:rgba(255,255,255,.92); letter-spacing:.05em; font-weight:300; margin:0; }
 .hero-ctas { display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap; margin:0; }
+.hero-book { width:100%; max-width:980px; background:rgba(255,255,255,.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-radius:12px; padding:1.1rem 1.3rem; box-shadow:0 24px 60px rgba(0,0,0,.32); margin:0; text-align:left; }
+.hero-book-row { display:grid; grid-template-columns:1fr 1fr 1fr 1fr auto; gap:.7rem; align-items:end; }
+.hero-book .fg { display:flex; flex-direction:column; gap:.3rem; margin:0; }
+.hero-book label { font-family:var(--font-body); font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted); }
+.hero-book input, .hero-book select { padding:.7rem .8rem; border:1px solid var(--border); border-radius:6px; font-size:.9rem; font-family:var(--font-body); background:#fff; min-height:44px; color:var(--text); transition:border-color .2s; outline:none; width:100%; }
+.hero-book input:focus, .hero-book select:focus { border-color:var(--accent); }
+.hero-book-submit { background:var(--cta); color:#1a1a1a; border:none; padding:0 1.6rem; min-height:44px; font-family:var(--font-body); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; font-weight:700; cursor:pointer; transition:background .25s, transform .25s; border-radius:6px; white-space:nowrap; }
+.hero-book-submit:hover { background:#e0a020; }
+.hero-book-children { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:.7rem; margin-top:.8rem; }
+.hero-book-children:empty { display:none; }
+@media (max-width:768px) {
+  .hero-book { padding:.95rem 1rem; }
+  .hero-book-row { grid-template-columns:1fr 1fr; gap:.6rem; }
+  .hero-book-submit { grid-column:1 / -1; padding:.85rem; }
+}
 .hero-scroll { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); z-index:2; display:flex; flex-direction:column; align-items:center; gap:.6rem; color:rgba(255,255,255,.6); text-decoration:none; transition:color .3s; }
 .hero-scroll:hover { color:rgba(255,255,255,.95); }
 .hero-scroll-label { font-family:var(--font-body); font-size:.62rem; letter-spacing:.22em; text-transform:uppercase; }
