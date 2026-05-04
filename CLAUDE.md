@@ -215,7 +215,7 @@ Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento privativo própri
 
 ### Diferenciais competitivos
 
-- Café da manhã com itens frescos, **produtos da própria horta/casa** (reforçar como peça central — provável que as 130 fotos de `Fotos/cafe-da-manha/` sejam para isso).
+- Café da manhã especial com itens frescos e caseiros (reforçar como peça central — provável que as 130 fotos de `Fotos/cafe-da-manha/` sejam para isso). **Não mencionar "horta" / "produtos da horta" / "nossa própria horta": o hotel não tem horta — confirmado pelo cliente em 2026-05-04.**
 - Mais de 50 anos de tradição familiar; 110 anos de prédio histórico.
 - **Acessibilidade** (apartamentos para necessidades especiais) — tratar como valor, não só comodidade.
 - Localização estratégica na Praça do Suspiro, perto do centro histórico, turístico e comercial.
@@ -268,7 +268,7 @@ Nada disso está feito ainda. Sugestão de sequência:
 3. Find/replace textual em todos os HTMLs (nome, cidade, UF, contatos, handles sociais — usar a tabela do `README.md` adaptada).
 4. Substituir conteúdo de `/acomodacoes/` para as 3 categorias (Colonial, Especial, Suíte) — não chalés.
 5. Substituir conteúdo de `/sobre/` com a história da família Dominguez (110 anos do prédio + 55 da gestão).
-6. Reavaliar `/experiencia/` — o template traz cavalgadas/pescaria; o Dominguez é hotel urbano. Atrações são o centro histórico, piscina, café da manhã da horta, passeios por Nova Friburgo.
+6. Reavaliar `/experiencia/` — o template traz cavalgadas/pescaria; o Dominguez é hotel urbano. Atrações são o centro histórico, piscina, café da manhã especial, passeios por Nova Friburgo.
 7. Criar `/eventos/` (ou embutir em `/experiencia/`) — espaços para 30–200 pessoas.
 8. Copiar/otimizar fotos de `Fotos/` → `assets/img/` (por tema) e substituir `placeholder.svg` em todos os HTMLs.
 9. Substituir `logo-placeholder.svg` e `favicon.svg` pelos ativos do Dominguez.

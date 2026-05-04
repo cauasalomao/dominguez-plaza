@@ -4,8 +4,8 @@
   "hotel": {
     "name": "Hotel Dominguez Plaza",
     "tagline": "55 anos de tradição no coração de Nova Friburgo",
-    "description_short": "Hotel histórico na Praça do Suspiro, Nova Friburgo/RJ. Mais de 110 anos de prédio, 55 anos de gestão familiar, café da manhã com produtos da própria horta e varandas com vista para as montanhas da Suíça Brasileira.",
-    "description_long": "O Hotel Dominguez Plaza nasceu há mais de 50 anos da visão do Sr. Julio Dominguez e Dona Glória, e hoje é conduzido pela filha Marisa Dominguez com a mesma dedicação que recebeu mais de 800 mil hóspedes ao longo de três gerações. Instalado em um prédio com mais de 110 anos na Praça do Suspiro — centro histórico de Nova Friburgo — o hotel reúne requinte, bom gosto e elegância nos mínimos detalhes. A maioria dos apartamentos e suítes tem varandas privativas com vista para as montanhas da Suíça Brasileira, estacionamento privativo próprio, acessibilidade para necessidades especiais e um café da manhã preparado com itens frescos, frutas e produtos da nossa própria horta. Permita-nos fazer de sua viagem a Nova Friburgo uma experiência extremamente agradável e bem sucedida.",
+    "description_short": "Hotel histórico na Praça do Suspiro, Nova Friburgo/RJ. Mais de 110 anos de prédio, 55 anos de gestão familiar, café da manhã especial e caseiro e varandas com vista para as montanhas da Suíça Brasileira.",
+    "description_long": "O Hotel Dominguez Plaza nasceu há mais de 50 anos da visão do Sr. Julio Dominguez e Dona Glória, e hoje é conduzido pela filha Marisa Dominguez com a mesma dedicação que recebeu mais de 800 mil hóspedes ao longo de três gerações. Instalado em um prédio com mais de 110 anos na Praça do Suspiro — centro histórico de Nova Friburgo — o hotel reúne requinte, bom gosto e elegância nos mínimos detalhes. A maioria dos apartamentos e suítes tem varandas privativas com vista para as montanhas da Suíça Brasileira, estacionamento privativo próprio, acessibilidade para necessidades especiais e um café da manhã especial preparado com itens frescos, frutas da estação e pães caseiros. Permita-nos fazer de sua viagem a Nova Friburgo uma experiência extremamente agradável e bem sucedida.",
     "style": "Hotel histórico urbano, elegante, tradicional, acolhedor — Nova Friburgo/Suíça Brasileira",
     "target_audience": "Casais em viagem romântica buscando charme e vista das montanhas; famílias com crianças; turistas de fim de semana em escapadas curtas do Rio, Niterói, Região dos Lagos e Região Serrana.",
     "tone": "Elegante e acolhedor, tradicional sem ser formal. Legado familiar de 55 anos como ativo de marca — modernização sem perder a tradição."
@@ -127,7 +127,7 @@
   "differentials": [
     "Mais de 110 anos de história em prédio preservado no centro histórico",
     "55 anos de gestão familiar — três gerações de hóspedes",
-    "Café da manhã com itens frescos e produtos da nossa horta",
+    "Café da manhã especial com itens frescos e caseiros",
     "Localização estratégica na Praça do Suspiro, coração de Nova Friburgo",
     "Estacionamento privativo próprio",
     "Apartamentos adaptados para necessidades especiais",
@@ -139,7 +139,7 @@
   "experience": {
     "breakfast": {
       "title": "Café da manhã da casa",
-      "description": "Mesa farta com itens frescos todos os dias, frutas da estação, pães, bolos caseiros, frios e produtos da nossa própria horta. Um ritual tradicional que celebra o bem receber da família Dominguez."
+      "description": "Mesa farta com itens frescos todos os dias, frutas da estação, pães, bolos caseiros e frios. Um ritual tradicional que celebra o bem receber da família Dominguez."
     },
     "pool": {
       "title": "Piscina e área externa",
