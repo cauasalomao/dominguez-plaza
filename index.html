@@ -115,6 +115,39 @@
       <span class="hero-overline">Hotel · Nova Friburgo — Suíça Brasileira</span>
       <h1 class="hero-title" style="font-size:clamp(2.2rem,5.5vw,4.2rem)">Hotel Dominguez Plaza</h1>
       <p class="hero-sub">há três gerações de hóspedes no coração de Nova Friburgo</p>
+      <form class="hero-book" onsubmit="submitHeroBooking(event)">
+        <div class="hero-book-row">
+          <div class="fg">
+            <label for="hb-checkin">Check-in</label>
+            <input type="date" id="hb-checkin" required>
+          </div>
+          <div class="fg">
+            <label for="hb-checkout">Check-out</label>
+            <input type="date" id="hb-checkout" required>
+          </div>
+          <div class="fg">
+            <label for="hb-adults">Adultos</label>
+            <select id="hb-adults">
+              <option value="1">1 adulto</option>
+              <option value="2" selected>2 adultos</option>
+              <option value="3">3 adultos</option>
+              <option value="4">4 adultos</option>
+              <option value="5">5 adultos</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="hb-children">Crianças</label>
+            <select id="hb-children" onchange="updateHeroChildAges()">
+              <option value="0" selected>Nenhuma</option>
+              <option value="1">1 criança</option>
+              <option value="2">2 crianças</option>
+              <option value="3">3 crianças</option>
+            </select>
+          </div>
+          <button type="submit" class="hero-book-submit">Reservar</button>
+        </div>
+        <div class="hero-book-children" id="hbChildAges"></div>
+      </form>
       <button type="button" class="hero-search" onclick="openBooking()" aria-label="Abrir busca de reservas">
         <span class="hs-seg">
           <span class="hs-lbl">Check-in</span>
