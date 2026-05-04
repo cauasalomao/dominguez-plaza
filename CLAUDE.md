@@ -209,9 +209,9 @@ O template traz 4 chalés rurais. O Dominguez tem **3 categorias** em prédio hi
 2. **Apartamento Especial** — um nível acima. Ar-condicionado frio/quente, ambientes mais modernos, pode ter varanda. Mesma base (TV, frigobar, banheiro privativo), mas qualidade geral melhor.
 3. **Suíte** — categoria mais alta. **Hidromassagem** (principal diferencial), ar-condicionado, mais espaço, ambiente reservado. Muitas com varanda e vista para as montanhas ou para a cidade.
 
-Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento privativo próprio** (destaque no copy), apartamentos adaptados para necessidades especiais, voltagem 220V em toda a cidade.
+Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento exclusivo para hóspedes** (destaque no copy), apartamentos adaptados para necessidades especiais, voltagem 220V em toda a cidade.
 
-Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento privativo próprio** (destaque no copy), apartamentos adaptados para necessidades especiais, voltagem 220V em toda a cidade.
+Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento exclusivo para hóspedes** (destaque no copy), apartamentos adaptados para necessidades especiais, voltagem 220V em toda a cidade.
 
 ### Diferenciais competitivos
 
@@ -219,7 +219,7 @@ Comodidades gerais: Wi-Fi, frigobar em todos, **estacionamento privativo própri
 - Mais de 50 anos de tradição familiar; 110 anos de prédio histórico.
 - **Acessibilidade** (apartamentos para necessidades especiais) — tratar como valor, não só comodidade.
 - Localização estratégica na Praça do Suspiro, perto do centro histórico, turístico e comercial.
-- **Estacionamento privativo** — relevante para o hóspede de carro vindo do Rio / Região dos Lagos.
+- **Estacionamento exclusivo para hóspedes** — relevante para o hóspede de carro vindo do Rio / Região dos Lagos.
 - Flexibilidade comercial e negociações diferenciadas (útil para copy de grupos/eventos).
 
 ### Eventos — página nova (ainda não existe no template)
