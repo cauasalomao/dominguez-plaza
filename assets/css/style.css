@@ -511,6 +511,12 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
   .strip-g { grid-template-columns:repeat(2,1fr); }
 }
 @media(max-width:768px){
+  .hero { height:auto; min-height:100vh; justify-content:flex-start; padding:6.5rem 0 3rem; }
+  .hero-c { gap:1.2rem; }
+  .hero-title { font-size:clamp(2.4rem,9vw,4rem)!important; }
+  .hero-sub { font-size:1rem; }
+  .hero-overline { font-size:.65rem; letter-spacing:.22em; }
+  .hero-scroll { display:none; }
   .nav { display:none; }
   .ham { display:flex; }
   .hdr-btn { display:none; }
@@ -540,7 +546,7 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
 }
 @media(max-width:480px){
   html { zoom:1; }
-  .hero { height:100vh; }
+  .hero { height:auto; min-height:100vh; padding:5.5rem 0 2.5rem; }
   .rp-g { grid-template-columns:1fr; }
   .exp-cards { grid-template-columns:1fr 1fr; gap:1rem; }
   .exp-card-img { aspect-ratio:1/1; }
