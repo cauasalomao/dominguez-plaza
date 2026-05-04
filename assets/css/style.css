@@ -180,7 +180,7 @@ img.loaded { opacity:1; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../img/texture-red.jpg');
+  background-image: url('../img/texture-red.png');
   background-size: 720px auto;
   background-repeat: repeat;
   opacity: .45;
@@ -219,7 +219,7 @@ img.loaded { opacity:1; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../img/texture-red.jpg');
+  background-image: url('../img/texture-red.png');
   background-size: 720px auto;
   background-repeat: repeat;
   opacity: .4;
@@ -241,7 +241,7 @@ img.loaded { opacity:1; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../img/texture-red.jpg');
+  background-image: url('../img/texture-red.png');
   background-size: 720px auto;
   background-repeat: repeat;
   opacity: .45;
