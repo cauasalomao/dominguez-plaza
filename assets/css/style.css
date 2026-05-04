@@ -493,7 +493,8 @@ img.loaded { opacity:1; }
 /* ── FOOTER ── */
 footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,8vw,7rem) 0 2rem; }
 .ft-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:3rem; margin-bottom:4rem; }
-.ft-brand .logo { font-size:2.2rem; color:rgba(255,255,255,.9); display:block; margin-bottom:1rem; }
+.ft-brand .logo { font-size:2.2rem; color:rgba(255,255,255,.9); display:inline-block; margin-bottom:1rem; }
+.ft-brand .logo-img { height:64px; width:auto; filter:brightness(0) invert(1); }
 .ft-brand p { font-size:.82rem; color:rgba(255,255,255,.45); max-width:28ch; }
 .ft-social { display:flex; gap:.8rem; margin-top:1.5rem; }
 .ft-social a { width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.65); font-size:.9rem; transition:background .2s,color .2s; }
