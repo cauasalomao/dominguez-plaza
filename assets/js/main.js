@@ -131,8 +131,8 @@ document.addEventListener('keydown', e => {
 // Destinatário principal: contato@hoteldominguez.com.br · cópia: caua.salomao@cidigitalmarketing.com
 // IMPORTANTE: o FormSubmit exige que o destinatário principal confirme via link
 // no primeiro e-mail recebido para começar a entregar mensagens reais.
-const CONTACT_EMAIL_TO = 'contato@hoteldominguez.com.br';
-const CONTACT_EMAIL_CC = 'caua.salomao@cidigitalmarketing.com';
+const CONTACT_EMAIL_TO = 'caua.salomao@cidigitalmarketing.com';
+const CONTACT_EMAIL_CC = 'contato@hoteldominguez.com.br';
 
 async function submitContact(e) {
   e.preventDefault();
