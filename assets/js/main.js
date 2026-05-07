@@ -127,15 +127,41 @@ document.addEventListener('keydown', e => {
 });
 
 // ── FORMULÁRIO CONTATO ──
+// Entrega por e-mail via FormSubmit (formsubmit.co) — sem backend próprio.
+// Destinatário principal: contato@hoteldominguez.com.br · cópia: caua.salomao@cidigitalmarketing.com
+// IMPORTANTE: o FormSubmit exige que o destinatário principal confirme via link
+// no primeiro e-mail recebido para começar a entregar mensagens reais.
+const CONTACT_EMAIL_TO = 'contato@hoteldominguez.com.br';
+const CONTACT_EMAIL_CC = 'caua.salomao@cidigitalmarketing.com';
+
 async function submitContact(e) {
   e.preventDefault();
   const form = e.target;
   const data = Object.fromEntries(new FormData(form));
 
-  // GTM
   pushLead('formulario_contato');
+  sendToWebhook({ tipo: 'contato', ...data });
 
-  await sendToWebhook({ tipo: 'contato', ...data });
+  try {
+    await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(CONTACT_EMAIL_TO), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: `[${HOTEL_NAME}] Contato — ${data.assunto || 'mensagem'} (${data.nome || 'sem nome'})`,
+        _cc: CONTACT_EMAIL_CC,
+        _template: 'table',
+        _captcha: 'false',
+        nome: data.nome || '',
+        email: data.email || '',
+        telefone: data.telefone || '',
+        assunto: data.assunto || '',
+        mensagem: data.mensagem || '',
+        origem_pagina: document.title,
+        url: location.href
+      })
+    });
+  } catch (err) { console.warn('FormSubmit:', err); }
+
   form.reset();
   document.getElementById('contactOk')?.classList.add('show');
 }
