@@ -525,6 +525,14 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
   .dif-g { grid-template-columns:1fr 1fr; }
   .strip-g { grid-template-columns:repeat(2,1fr); }
 }
+/* tablet header: evita sobreposição da logo com o menu em 769-1024px */
+@media(min-width:769px) and (max-width:1024px){
+  .logo-img { height:48px; }
+  .nav { gap:1.1rem; }
+  .nav a { font-size:.6rem; letter-spacing:.1em; }
+  .hdr-btn { padding:.55rem 1.1rem; font-size:.62rem; letter-spacing:.12em; }
+  .hdr-inner { gap:1rem; }
+}
 @media(max-width:768px){
   .hero { height:auto; min-height:100vh; justify-content:center; padding:7.5rem 0 3rem; }
   .hero-c { gap:1.5rem; padding:0 1.5rem; }
