@@ -3,7 +3,7 @@
    Nova Friburgo/RJ — motor de reservas Desbravador
    ============================================================ */
 
-const WEBHOOK_URL = 'https://webhook.example.com/webhook/REPLACE-ME';
+const WEBHOOK_URL = 'https://webhook.cidigitalmarketing.com/webhook/7c87bd71-6c33-437f-9073-2fae80d76d2f';
 const HOTEL_NAME  = 'Hotel Dominguez Plaza';
 const WA_NUMBER   = '5522992938225';
 const WA_MESSAGE  = 'Olá! Gostaria de informações sobre o Hotel Dominguez Plaza.';

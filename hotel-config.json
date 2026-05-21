@@ -246,8 +246,8 @@
   },
 
   "integrations": {
-    "webhook_url": "https://webhook.example.com/webhook/REPLACE-ME",
-    "gtm_id": "",
+    "webhook_url": "https://webhook.cidigitalmarketing.com/webhook/7c87bd71-6c33-437f-9073-2fae80d76d2f",
+    "gtm_id": "GTM-P876F9LS",
     "booking_engine_url": "https://reservas.desbravador.com.br/hotel-app/hotel-dominguez-plaza/reservation",
     "booking_engine_provider": "Desbravador",
     "maps_embed_query": "Hotel Dominguez Plaza, Nova Friburgo - RJ",
