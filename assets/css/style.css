@@ -447,7 +447,7 @@ img.loaded { opacity:1; }
 @keyframes bkSlideUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
 .bk-close { position:absolute; top:1rem; right:1rem; background:var(--surface-light); border:none; width:36px; height:36px; border-radius:50%; font-size:1.4rem; cursor:pointer; z-index:2; display:flex; align-items:center; justify-content:center; line-height:1; color:var(--text); transition:background .2s; }
 .bk-close:hover { background:var(--border); }
-.bk-header { padding:1.5rem 1.8rem 0; display:flex; gap:1rem; align-items:center; }
+.bk-header { padding:1.5rem 1.8rem 0; display:flex; flex-direction:column; gap:.6rem; align-items:center; text-align:center; }
 .bk-header img { border-radius:8px; object-fit:contain; background:var(--surface-light); }
 .bk-header h3 { font-family:var(--font-body); font-size:1.05rem; font-weight:700; margin:0 0 .15rem; color:var(--text); letter-spacing:.02em; }
 .bk-header p  { font-size:.78rem; color:var(--text-muted); margin:0; line-height:1.4; }
