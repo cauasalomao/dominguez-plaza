@@ -27,3 +27,10 @@ Base*.png
 Base*.jpg
 freepik_*.png
 freepik_*.jpg
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
