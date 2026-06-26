@@ -512,7 +512,7 @@ footer { background:var(--text); color:rgba(255,255,255,.8); padding:clamp(4rem,
 .ft-social a { width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.65); font-size:.9rem; transition:background .2s,color .2s; }
 .ft-social a:hover { background:var(--cta); color:#fff; }
 .ft-col h4 { font-size:.65rem; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.42); margin-bottom:1.2rem; font-family:var(--font-body); }
-.ft-col a,.ft-col span { display:block; font-size:.83rem; color:rgba(255,255,255,.6); margin-bottom:.6rem; transition:color .2s; }
+.ft-col a,.ft-col span { display:block; font-size:.83rem; color:rgba(255,255,255,.6); margin-bottom:.6rem; transition:color .2s; overflow-wrap:anywhere; }
 .ft-col a:hover { color:var(--cta); }
 .ft-bottom { border-top:1px solid rgba(255,255,255,.08); padding-top:1.8rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
 .ft-bottom p { font-size:.72rem; color:rgba(255,255,255,.38); max-width:none; }
